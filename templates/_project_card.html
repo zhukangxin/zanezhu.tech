@@ -1,0 +1,15 @@
+<article class="project-card">
+  {% if pr.cover %}
+  <a class="project-cover" href="{{ pr.url or '#' }}" {% if pr.url %}rel="noopener" target="_blank"{% endif %} tabindex="-1" aria-hidden="true"><img src="{{ pr.cover }}" alt="" loading="lazy"></a>
+  {% endif %}
+  <div class="project-body">
+    <h3 class="project-title">{% if pr.url %}<a href="{{ pr.url }}" rel="noopener" target="_blank">{{ pr.title }}</a>{% else %}{{ pr.title }}{% endif %}</h3>
+    {% if pr.description %}<p class="project-desc">{{ pr.description }}</p>{% endif %}
+    {% if pr.html and pr.html|striptags != pr.description %}<div class="prose small">{{ pr.html | safe }}</div>{% endif %}
+    {% if pr.tags %}<p class="chips">{% for t in pr.tags %}<span class="chip">{{ t }}</span>{% endfor %}</p>{% endif %}
+    <p class="project-links">
+      {% if pr.url %}<a href="{{ pr.url }}" rel="noopener" target="_blank">{{ ui.visit_project }} ↗</a>{% endif %}
+      {% if pr.repo %}<a href="{{ pr.repo }}" rel="noopener" target="_blank">{{ ui.view_code }} ↗</a>{% endif %}
+    </p>
+  </div>
+</article>

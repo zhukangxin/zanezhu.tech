@@ -45,6 +45,7 @@
       </a>
       <nav class="nav" aria-label="Main">
         <a href="{{ pre }}/resume/" {% if nav == 'resume' %}aria-current="page"{% endif %}>{{ ui.nav_resume }}</a>
+        <a href="{{ pre }}/projects/" {% if nav == 'projects' %}aria-current="page"{% endif %}>{{ ui.nav_projects }}</a>
         <a href="{{ pre }}/articles/" {% if nav == 'articles' %}aria-current="page"{% endif %}>{{ ui.nav_articles }}</a>
         <a href="{{ pre }}/updates/" {% if nav == 'updates' %}aria-current="page"{% endif %}>{{ ui.nav_updates }}</a>
         <a class="lang-switch" href="{{ alt_path }}" hreflang="{{ alt_ui.html_lang }}" lang="{{ alt_ui.html_lang }}" title="{{ ui.switch_title }}">{{ ui.switch_label }}</a>

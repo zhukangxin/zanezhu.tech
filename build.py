@@ -108,6 +108,9 @@ def load_collection(kind, lang):
             "external_url": meta.get("external_url") or "",
             "link": meta.get("link") or "",
             "cover": meta.get("cover") or "",
+            "url": meta.get("url") or "",
+            "repo": meta.get("repo") or "",
+            "featured": bool(meta.get("featured")),
             "html": body_html,
             "lang": lang,
         }
@@ -144,6 +147,11 @@ def main():
 
     articles = {l: load_collection("articles", l) for l in langs}
     updates = {l: load_collection("updates", l) for l in langs}
+    projects = {}
+    for l in langs:
+        items = load_collection("projects", l)
+        items.sort(key=lambda x: (not x["featured"], -x["date"].toordinal()))
+        projects[l] = items
 
     sitemap = []  # (path, {lang: path}, lastmod)
     build_date = dt.date.today()
@@ -219,6 +227,7 @@ def main():
             path, apath, ui["site_title"] + " · " + p(profile, "headline", lang).split("·")[0].strip(),
             ui["site_description"],
             {"articles": articles[lang][:3], "updates": updates[lang][:3],
+             "projects": projects[lang][:3],
              "json_ld": [person_ld], "nav": "home"})))
         sitemap.append((path, {lang: path, alt: apath}, build_date))
 
@@ -259,6 +268,14 @@ def main():
                 a["description"], {"a": a, "json_ld": [article_ld], "nav": "articles",
                                    "has_translation": bool(apath)}, page_type="article")))
             sitemap.append((path, {lang: path, alt: apath} if apath else {lang: path}, a["date"]))
+
+        # Projects
+        path, apath = pre + "/projects/", alt_pre + "/projects/"
+        write(path, env.get_template("projects.html").render(**ctx(
+            path, apath, ui["projects_title"] + " · " + name, ui["projects_intro"],
+            {"projects": projects[lang], "nav": "projects"})))
+        last = max([x["date"] for x in projects[lang]] or [build_date])
+        sitemap.append((path, {lang: path, alt: apath}, last))
 
         # Updates
         path, apath = pre + "/updates/", alt_pre + "/updates/"

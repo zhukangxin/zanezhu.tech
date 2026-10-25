@@ -242,3 +242,16 @@ ul.plain { padding-left: 18px; margin: 0; color: var(--ink-2); }
   a { color: inherit; text-decoration: none; }
   @page { margin: 14mm 14mm; }
 }
+
+/* projects */
+.project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+.project-card { background: var(--card); border: 1px solid var(--rule); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow); }
+.project-cover { display: block; aspect-ratio: 16 / 9; background: var(--paper-2); }
+.project-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.project-body { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.project-title { font-size: 20px; }
+.project-title a { color: var(--ink); text-decoration: none; }
+.project-title a:hover { color: var(--accent); }
+.project-desc { margin: 0; color: var(--ink-2); font-size: 15.5px; }
+.project-links { margin: auto 0 0; display: flex; gap: 16px; font-size: 15px; font-weight: 500; }
+@media (max-width: 600px) { .project-grid { grid-template-columns: 1fr; } }

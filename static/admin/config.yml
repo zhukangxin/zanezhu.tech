@@ -90,6 +90,47 @@ collections:
       - { label: "Draft (hidden from the site)", name: draft, widget: boolean, default: false, required: false }
       - { label: "Body", name: body, widget: markdown, required: false }
 
+  # ------------------------------------------------------------ 作品
+  - name: projects_zh
+    label: "作品（中文）"
+    label_singular: "中文作品"
+    folder: content/projects/zh
+    create: true
+    slug: "{{url_slug}}"
+    summary: "{{title}}{{draft | ternary(' （草稿）', '')}}"
+    fields:
+      - { label: "作品名称", name: title, widget: string }
+      - { label: "网址名", name: url_slug, widget: string, hint: "英文小写和短横线，中英文版本用同一个", pattern: ['^[a-z0-9-]+$', "只能用小写字母、数字和短横线"] }
+      - { label: "日期", name: date, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+      - { label: "一句话介绍", name: description, widget: text }
+      - { label: "作品网址", name: url, widget: string, required: false }
+      - { label: "代码仓库（可选）", name: repo, widget: string, required: false }
+      - { label: "封面截图（可选）", name: cover, widget: image, required: false }
+      - { label: "标签", name: tags, widget: list, required: false }
+      - { label: "置顶", name: featured, widget: boolean, default: false, required: false }
+      - { label: "草稿", name: draft, widget: boolean, default: false, required: false }
+      - { label: "补充说明（可选）", name: body, widget: markdown, required: false }
+
+  - name: projects_en
+    label: "Projects (English)"
+    label_singular: "English project"
+    folder: content/projects/en
+    create: true
+    slug: "{{url_slug}}"
+    summary: "{{title}}{{draft | ternary(' (draft)', '')}}"
+    fields:
+      - { label: "Title", name: title, widget: string }
+      - { label: "URL name", name: url_slug, widget: string, pattern: ['^[a-z0-9-]+$', "Lowercase letters, numbers and hyphens only"] }
+      - { label: "Date", name: date, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+      - { label: "One-line description", name: description, widget: text }
+      - { label: "Project URL", name: url, widget: string, required: false }
+      - { label: "Code repository (optional)", name: repo, widget: string, required: false }
+      - { label: "Cover screenshot (optional)", name: cover, widget: image, required: false }
+      - { label: "Tags", name: tags, widget: list, required: false }
+      - { label: "Featured", name: featured, widget: boolean, default: false, required: false }
+      - { label: "Draft", name: draft, widget: boolean, default: false, required: false }
+      - { label: "Notes (optional)", name: body, widget: markdown, required: false }
+
   # ------------------------------------------------------------ 简历
   - name: profile
     label: "个人简历 Résumé"

@@ -41,6 +41,20 @@
   </div>
 </section>
 
+{% if projects %}
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title">{{ ui.latest_projects }}</h2>
+      <a class="more" href="{{ pre }}/projects/">{{ ui.see_all }} →</a>
+    </div>
+    <div class="project-grid">
+      {% for pr in projects %}{% include "_project_card.html" %}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <section class="section section-split">
   <div class="wrap split">
     <div>

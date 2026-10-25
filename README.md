@@ -122,3 +122,34 @@ python -m http.server 8000 --directory dist   # 浏览器打开 http://localhost
 ```
 
 SEO 已内置：每页独立的标题和描述、canonical、中英 hreflang 互指、Open Graph 分享卡片、Schema.org Person/BlogPosting 结构化数据、sitemap.xml、robots.txt、中英文 RSS。网站不依赖任何外部字体或脚本（后台除外），因此在中国大陆访问也较快。
+
+---
+
+## 四、自有服务器（阿里云）上的更新方式
+
+网站源文件在 GitHub，服务器上的副本在 `/opt/zanezhu.tech`，网页目录是 `/var/www/zanezhu.tech`。
+
+**手动更新**（在 GitHub 改完内容后，SSH 登录服务器运行）：
+
+```bash
+bash /opt/zanezhu.tech/update.sh --force
+```
+
+**自动更新**（推荐，每 5 分钟检查一次 GitHub，有新内容就自动重新生成）：
+
+```bash
+crontab -e
+# 在打开的文件最后加一行，保存退出：
+*/5 * * * * bash /opt/zanezhu.tech/update.sh >> /var/log/zanezhu-update.log 2>&1
+```
+
+**在 GitHub 网页上直接修改内容**（不需要后台）：
+
+| 要改什么 | 文件位置 | 怎么做 |
+|---|---|---|
+| 个人简介、简历 | `data/profile.yaml` | 打开文件 → 点铅笔图标编辑 → Commit changes |
+| 新增文章 | `content/articles/zh/` 或 `en/` | 进入文件夹 → Add file → Create new file，文件名如 `my-article.md` |
+| 新增作品 | `content/projects/zh/` 或 `en/` | 同上，文件名如 `my-project.md` |
+| 新增动态 | `content/updates/zh/` 或 `en/` | 同上，文件名如 `2026-11-01-note.md` |
+
+新文件的格式可以照抄同一文件夹里的 `example-*.md`，把 `draft: true` 改成 `false`。
