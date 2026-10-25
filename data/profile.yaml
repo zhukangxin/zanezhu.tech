@@ -67,8 +67,8 @@ experience:
       - "外部协同：对接中国支付清算协会、上海及北京支付清算协会、上海及深圳海关单一窗口、SWIFT接入服务商；牵头PANDA、EDGE、COMPASS供应商遴选与招标。"
       - "数据与工具：使用SQLite和Python进行本地化规则验证、运营数据验证和场景模拟；使用Access维护和分析定期运营数据、生成定期报告，并设计产品原型的数据结构与界面要素；使用Power BI进行数据预处理和清洗；使用SharePoint进行跨团队协作。"
 
-  - org_en: "Fanhai International School of Finance, Fudan University"
-    org_zh: "复旦大学泛海国际金融学院"
+  - org_en: "Fudan International School of Finance, Fudan University"
+    org_zh: "复旦大学国际金融学院"
     role_en: "FMBA/MBA Live Project Mentor (part-time)"
     role_zh: "FMBA/MBA实战项目导师（兼职）"
     start: "2020.01"
@@ -217,7 +217,12 @@ education:
     degree_zh: "通信工程 工学学士"
     start: "1991.09"
     end: "1995.07"
-
+ - school_en: "Shanghai Jiao Tong University"
+    school_zh: "上海交通大学"
+    degree_en: "B.S., Engineering Economics"
+    degree_zh: "技术经济, 工学学士"
+    start: "1991.09"
+    end: "1995.07"
 honors_en:
   - "Shanghai Outstanding Graduate (1995, 2000)"
   - "National Excellence Scholarship, First Prize (1996)"
