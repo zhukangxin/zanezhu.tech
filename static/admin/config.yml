@@ -1,0 +1,164 @@
+# Decap CMS 后台配置
+# 唯一需要你修改的地方：把 YOUR_GITHUB_USERNAME 换成你的 GitHub 用户名
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/zanezhu.tech
+  branch: main
+  commit_messages:
+    create: "新建 {{collection}}：{{slug}}"
+    update: "更新 {{collection}}：{{slug}}"
+    delete: "删除 {{collection}}：{{slug}}"
+    uploadMedia: "上传图片 {{path}}"
+    deleteMedia: "删除图片 {{path}}"
+
+locale: zh_Hans
+site_url: https://zanezhu.tech
+display_url: https://zanezhu.tech
+logo_url: /favicon.svg
+
+media_folder: static/images/uploads
+public_folder: /images/uploads
+
+collections:
+  # ------------------------------------------------------------ 动态
+  - name: updates_zh
+    label: "动态（中文）"
+    label_singular: "中文动态"
+    folder: content/updates/zh
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}{{minute}}"
+    sortable_fields: ["date", "title"]
+    summary: "{{date | date('YYYY-MM-DD')}} · {{title}}"
+    fields:
+      - { label: "标题", name: title, widget: string }
+      - { label: "日期", name: date, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+      - { label: "相关链接（可选）", name: link, widget: string, required: false }
+      - { label: "内容", name: body, widget: markdown, required: false, buttons: [bold, italic, link, bulleted-list], editor_components: [] }
+
+  - name: updates_en
+    label: "Updates (English)"
+    label_singular: "English update"
+    folder: content/updates/en
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}{{minute}}"
+    sortable_fields: ["date", "title"]
+    summary: "{{date | date('YYYY-MM-DD')}} · {{title}}"
+    fields:
+      - { label: "Title", name: title, widget: string }
+      - { label: "Date", name: date, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+      - { label: "Link (optional)", name: link, widget: string, required: false }
+      - { label: "Text", name: body, widget: markdown, required: false, buttons: [bold, italic, link, bulleted-list], editor_components: [] }
+
+  # ------------------------------------------------------------ 文章
+  - name: articles_zh
+    label: "文章（中文）"
+    label_singular: "中文文章"
+    folder: content/articles/zh
+    create: true
+    slug: "{{url_slug}}"
+    sortable_fields: ["date", "title"]
+    summary: "{{date | date('YYYY-MM-DD')}} · {{title}}{{draft | ternary(' （草稿）', '')}}"
+    fields:
+      - { label: "标题", name: title, widget: string }
+      - { label: "网址名", name: url_slug, widget: string, hint: "用英文小写和短横线，例如 digital-payment-strategy。中英文版本用同一个网址名，网站会自动关联两种语言。保存后请勿修改。", pattern: ['^[a-z0-9-]+$', "只能用小写字母、数字和短横线"] }
+      - { label: "日期", name: date, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+      - { label: "摘要", name: description, widget: text, required: false, hint: "一两句话，会显示在文章列表和搜索引擎结果中" }
+      - { label: "标签", name: tags, widget: list, required: false, hint: "用逗号分隔，例如：数字化战略, 支付" }
+      - { label: "最初发表于（可选）", name: publication, widget: string, required: false, hint: "例如：微信公众号「XXX」、《金融电子化》" }
+      - { label: "原文链接（可选）", name: external_url, widget: string, required: false, hint: "只填链接、不写正文时，文章列表会直接跳转到原文" }
+      - { label: "封面图（可选）", name: cover, widget: image, required: false }
+      - { label: "草稿（勾选后不在网站显示）", name: draft, widget: boolean, default: false, required: false }
+      - { label: "正文", name: body, widget: markdown, required: false }
+
+  - name: articles_en
+    label: "Articles (English)"
+    label_singular: "English article"
+    folder: content/articles/en
+    create: true
+    slug: "{{url_slug}}"
+    sortable_fields: ["date", "title"]
+    summary: "{{date | date('YYYY-MM-DD')}} · {{title}}{{draft | ternary(' (draft)', '')}}"
+    fields:
+      - { label: "Title", name: title, widget: string }
+      - { label: "URL name", name: url_slug, widget: string, hint: "Lowercase letters and hyphens, e.g. digital-payment-strategy. Use the same URL name as the Chinese version to link the two languages. Don't change it after saving.", pattern: ['^[a-z0-9-]+$', "Lowercase letters, numbers and hyphens only"] }
+      - { label: "Date", name: date, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+      - { label: "Summary", name: description, widget: text, required: false }
+      - { label: "Tags", name: tags, widget: list, required: false }
+      - { label: "Originally published in (optional)", name: publication, widget: string, required: false }
+      - { label: "Original link (optional)", name: external_url, widget: string, required: false }
+      - { label: "Cover image (optional)", name: cover, widget: image, required: false }
+      - { label: "Draft (hidden from the site)", name: draft, widget: boolean, default: false, required: false }
+      - { label: "Body", name: body, widget: markdown, required: false }
+
+  # ------------------------------------------------------------ 简历
+  - name: profile
+    label: "个人简历 Résumé"
+    editor: { preview: false }
+    files:
+      - name: profile
+        label: "简历内容（中英双语）"
+        file: data/profile.yaml
+        fields:
+          - { label: "英文名", name: name_en, widget: string }
+          - { label: "中文名", name: name_zh, widget: string }
+          - { label: "一句话定位（英）", name: headline_en, widget: string }
+          - { label: "一句话定位（中）", name: headline_zh, widget: string }
+          - { label: "所在地（英）", name: location_en, widget: string }
+          - { label: "所在地（中）", name: location_zh, widget: string }
+          - { label: "邮箱", name: email, widget: string }
+          - { label: "LinkedIn", name: linkedin, widget: string }
+          - { label: "头像（可选）", name: avatar, widget: image, required: false }
+          - { label: "首页金句（英）", name: intro_en, widget: string }
+          - { label: "首页金句（中）", name: intro_zh, widget: string }
+          - { label: "个人概要（英）", name: summary_en, widget: text }
+          - { label: "个人概要（中）", name: summary_zh, widget: text }
+          - label: "代表性成果（首页数字）"
+            name: highlights
+            widget: list
+            summary: "{{value}}"
+            fields:
+              - { label: "数字", name: value, widget: string }
+              - { label: "数字（中文写法，可选）", name: value_zh, widget: string, required: false }
+              - { label: "说明（英）", name: label_en, widget: string }
+              - { label: "说明（中）", name: label_zh, widget: string }
+          - label: "工作经历（从新到旧）"
+            name: experience
+            widget: list
+            summary: "{{start}} – {{end}} · {{org_zh}}"
+            fields:
+              - { label: "公司（英）", name: org_en, widget: string }
+              - { label: "公司（中）", name: org_zh, widget: string }
+              - { label: "职位（英）", name: role_en, widget: string }
+              - { label: "职位（中）", name: role_zh, widget: string }
+              - { label: "开始（如 2018.11）", name: start, widget: string }
+              - { label: "结束（留空表示至今）", name: end, widget: string, required: false }
+              - { label: "城市（英）", name: location_en, widget: string, required: false }
+              - { label: "城市（中）", name: location_zh, widget: string, required: false }
+              - { label: "工作内容（英）", name: bullets_en, widget: list, field: { label: "Bullet", name: bullet, widget: text } }
+              - { label: "工作内容（中）", name: bullets_zh, widget: list, field: { label: "要点", name: bullet, widget: text } }
+          - label: "教育背景"
+            name: education
+            widget: list
+            summary: "{{start}} – {{end}} · {{school_zh}}"
+            fields:
+              - { label: "学校（英）", name: school_en, widget: string }
+              - { label: "学校（中）", name: school_zh, widget: string }
+              - { label: "学位（英）", name: degree_en, widget: string }
+              - { label: "学位（中）", name: degree_zh, widget: string }
+              - { label: "开始", name: start, widget: string }
+              - { label: "结束", name: end, widget: string }
+          - { label: "荣誉（英）", name: honors_en, widget: list, field: { label: "Honor", name: honor, widget: string } }
+          - { label: "荣誉（中）", name: honors_zh, widget: list, field: { label: "荣誉", name: honor, widget: string } }
+          - label: "能力"
+            name: skills
+            widget: list
+            summary: "{{group_zh}}"
+            fields:
+              - { label: "分类（英）", name: group_en, widget: string }
+              - { label: "分类（中）", name: group_zh, widget: string }
+              - { label: "能力项（英）", name: items_en, widget: list }
+              - { label: "能力项（中）", name: items_zh, widget: list }
+          - { label: "语言（英）", name: languages_en, widget: string }
+          - { label: "语言（中）", name: languages_zh, widget: string }
+          - { label: "工作之外（英）", name: personal_en, widget: string, required: false }
+          - { label: "工作之外（中）", name: personal_zh, widget: string, required: false }

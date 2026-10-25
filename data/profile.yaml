@@ -1,0 +1,256 @@
+# ------------------------------------------------------------------
+# 个人资料 / Profile — 网站上所有简历内容都来自这个文件
+# 可以在 zanezhu.tech/admin 后台「个人简历」里在线修改，无需改代码
+# ------------------------------------------------------------------
+
+name_en: "Kangxin (Zane) Zhu"
+name_zh: "朱康辛"
+headline_en: "Digital Product & Strategy Leader · Fintech and Cross-border Payments"
+headline_zh: "数字化产品与战略专家 · 金融科技与跨境支付"
+location_en: "San Francisco Bay Area, CA"
+location_zh: "美国 · 旧金山湾区"
+email: "zhukangxin@gmail.com"
+linkedin: "https://www.linkedin.com/in/zane-zhu/"
+avatar: "/images/avatar.jpg"
+
+intro_en: "I turn strategy into products that ship — then into operating models that scale."
+intro_zh: "把战略变成能上线的产品，再把产品变成可复制的运营模式。"
+
+summary_en: >-
+  Over 20 years across telecom, high-tech and banking. Nearly eight years at Citi China
+  leading digital strategy and cross-border payment products; more than eight years of
+  strategy consulting and corporate planning at Accenture, Huawei Group Strategy,
+  METATHINK and SUNIVO; and an early career building software products and teams at
+  Lucent and Wondertek. I break complex problems down from an enterprise-wide view,
+  turn strategy into executable plans, prove them in pilots, and then scale them across
+  the organization.
+summary_zh: "20余年横跨电信、高科技与银行业：在花旗中国近8年牵头数字化战略与跨境支付产品；8年以上战略咨询与企划管理经验（埃森哲、华为集团战略规划部、根元咨询、春宇集团）；早期在朗讯与网达从事软件产品研发与团队管理。擅长从集团视角拆解复杂问题，把战略转化为可执行的行动方案，并推动试点验证与全面推广。"
+
+highlights:
+  - value: "8,200+"
+    label_en: "corporate clients on the cross-border payment platform, ~2.5M transactions a year"
+    label_zh: "跨境支付平台服务企业客户，年均约250万笔交易"
+  - value: "57% → 92%"
+    label_en: "paperless client adoption, driven by the 3L go-to-market strategy"
+    label_zh: "无纸化客户采纳率，由3L客户推广策略驱动"
+  - value: "80%"
+    label_en: "of goods-trade payment reviews automated; 40 min → 1–2 min per review"
+    label_zh: "货物贸易付款审核实现自动化，单笔由40分钟降至1–2分钟"
+  - value: "1–2 yrs → 1–2 mos"
+    value_zh: "1–2年 → 1–2月"
+    label_en: "regulatory rule delivery time with the COMPASS low-code rules platform"
+    label_zh: "借助COMPASS低代码规则平台，监管规则交付周期大幅缩短"
+
+experience:
+  - org_en: "Citibank (China)"
+    org_zh: "花旗银行（中国）"
+    role_en: "VP, Digital Innovation Product Manager (Cross-border Payments), Treasury & Trade Solutions"
+    role_zh: "交易银行部（TTS）数字创新产品经理（跨境支付）VP"
+    start: "2018.11"
+    end: "2026.07"
+    location_en: "Shanghai"
+    location_zh: "上海"
+    bullets_en:
+      - "Strategy: As a core member of Citi China's Digital Council, built the digital strategy framework and led the 3A strategy (All-online, Automated, Autonomous). Proven first in payments, it was adopted as Citi China's firmwide strategy framework for 2025 across all product lines."
+      - "Enterprise rollout: Led 3A implementation and the Paperless program, changing how 227 people across 8 functions work — Operations, Relationship Managers, Sales, Technology, Compliance, Product, the CEO Office and the CIO Office."
+      - "Client go-to-market: Created the 3L strategy (Paperless → InfoLess → InfoLeast), rolled out by client maturity and risk level; paperless adoption rose from 57% to 92%."
+      - "Platform innovation: Designed COMPASS, a low-code rules platform that turned regulatory rule changes from development work into configuration, cutting delivery from 1–2 years to 1–2 months. Evolved payment review from manual checks to rules automation + AI judgment + human review, automating 80% of goods-trade payment reviews."
+      - "Pilots: Ran an auto-collection pilot for 130 low-risk corporate clients, cutting posting time from about 20 minutes to under 1 minute. Led LLM pilots — unstructured document extraction and a RAG regulatory assistant — that reduced regulation lookup time in rule design by about 70%."
+      - "Ecosystem: Worked with the Payment & Clearing Association of China, the Shanghai and Beijing clearing associations, the Shanghai and Shenzhen Customs Single Window, and a SWIFT service bureau; led vendor selection and tendering for the PANDA, EDGE and COMPASS platforms."
+      - "Data & tools: Used SQLite and Python for local rule validation, operational data validation and scenario simulation; Microsoft Access to maintain and analyze recurring operations data, produce periodic reports, and design data structures and UI elements for product prototypes; Power BI for data preprocessing and cleansing; and SharePoint for cross-team collaboration."
+    bullets_zh:
+      - "战略制定：作为数字化委员会核心成员，搭建花旗中国数字化战略与框架，组织高管数字化趋势研讨；牵头制定3A战略（全线上、自动化、自主化），经支付业务验证后被采纳为花旗中国2025年全行战略框架，覆盖全部产品线。"
+      - "全面推广：主导3A落地与无纸化项目，涉及运营、客户经理、销售、科技、合规、产品、CEO办公室、CIO办公室8个职能共227人的工作方式转变。"
+      - "客户进入策略：首创3L客户推广策略（Paperless → InfoLess → InfoLeast），按客户成熟度与风险等级分层推进，无纸化采纳率由57%提升至92%。"
+      - "模式创新：设计低代码规则平台COMPASS，使监管规则变更由开发改为配置，交付周期由1–2年缩短至1–2个月；推动付款审核从人工到「规则自动化＋AI判断＋人工复核」演进，80%货物贸易付款审核实现自动化。"
+      - "试点验证：开展自动收款试点，覆盖130家低风险企业客户，单笔入账由约20分钟降至1分钟以内；牵头大模型试点（非结构化单据信息提取、RAG法规助手），规则设计中的法规查询时间减少约70%。"
+      - "外部协同：对接中国支付清算协会、上海及北京支付清算协会、上海及深圳海关单一窗口、SWIFT接入服务商；牵头PANDA、EDGE、COMPASS供应商遴选与招标。"
+      - "数据与工具：使用SQLite和Python进行本地化规则验证、运营数据验证和场景模拟；使用Access维护和分析定期运营数据、生成定期报告，并设计产品原型的数据结构与界面要素；使用Power BI进行数据预处理和清洗；使用SharePoint进行跨团队协作。"
+
+  - org_en: "Fanhai International School of Finance, Fudan University"
+    org_zh: "复旦大学泛海国际金融学院"
+    role_en: "FMBA/MBA Live Project Mentor (part-time)"
+    role_zh: "FMBA/MBA实战项目导师（兼职）"
+    start: "2020.01"
+    end: "2026.07"
+    location_en: "Shanghai"
+    location_zh: "上海"
+    bullets_en:
+      - "Designed and launched the \"Digital Currency Strategy & Product Planning\" live-project track based on independent research, guiding students through strategy and product planning."
+      - "Taught corporate strategy design and mentored live projects on multinational digitalization and metaverse strategy, fintech strategy, and banks' Belt and Road strategies."
+    bullets_zh:
+      - "基于独立研究设计并开设「数字货币战略产品规划」实战项目方向，指导学员完成战略与产品规划。"
+      - "讲授企业战略设计课程，指导学员完成跨国企业数字化/元宇宙战略、金融科技企业及银行「一带一路」战略等实战项目。"
+
+  - org_en: "METATHINK"
+    org_zh: "根元咨询（METATHINK）"
+    role_en: "Director of Business Innovation"
+    role_zh: "商业创新总监"
+    start: "2017.11"
+    end: "2018.05"
+    location_en: "Shanghai"
+    location_zh: "上海"
+    bullets_en:
+      - "At a leading Chinese strategy and brand consultancy, led customer-experience strategy and business-model innovation projects."
+      - "Designed service and operating experience innovations for Nu Skin's flagship-store touchpoints."
+    bullets_zh:
+      - "国内领先的战略与品牌咨询公司；负责客户体验战略与商业模式创新项目。"
+      - "负责如新集团（Nu Skin）旗舰店体验触点的服务与运营体验创新设计。"
+
+  - org_en: "Huawei Technologies"
+    org_zh: "华为技术有限公司"
+    role_en: "Senior Strategy & Business Planning Expert, Group Strategy Department (Financial Services, Cloud & IoT)"
+    role_zh: "集团战略规划部 高级战略规划与业务规划专家（金融行业、云与物联网）"
+    start: "2014.05"
+    end: "2017.11"
+    location_en: "Shenzhen / Shanghai"
+    location_zh: "深圳 / 上海"
+    bullets_en:
+      - "Strategy Advisory Council: Lead organizer and researcher for Huawei's SAC (2014–2017), covering IoT, cloud services, enterprise IT, smart cities, VR/AR and AI, and bringing in global external experts to align senior leadership on strategic direction — groundwork for Huawei's cloud and intelligence businesses."
+      - "Vision & mission: Led the 2017 group vision-and-mission study, benchmarking Microsoft, GE and others; built vision and mission into the strategy management system and helped shift Huawei's vision toward a \"digital and intelligent world\"."
+      - "New-business entry: In 2014 independently completed a China cloud-services industry study (with Python-based data analysis) that identified which industries to enter first (banking and insurance) and which to avoid (chemicals); contributed to the cloud strategy adopted as a group priority, and to the annual 811 plan for cloud and enterprise IT."
+      - "Financial services: In 2017 independently scanned the strategies of 26 major European banks and proposed two fintech breakthrough directions, adopted into the Enterprise BG's European financial-sector plan and training; in 2016 developed China insights and the group's annual financial-services strategy content."
+      - "Regions & capital markets: Led Huawei's Latin America strategy plan (vision and mission, business and market, organization and resources); presented Huawei's strategy to investors in the 2017 European non-rated bond issue."
+      - "Methodology: Helped design the group's strategy methodology system as part of the Capability Center, and built Huawei's internal and external expert networks."
+    bullets_zh:
+      - "集团战略研讨：2014–2017年任华为战略咨询委员会（SAC）主要组织者与课题研究者，完成万物互联、云服务、企业IT、智慧城市、VR/AR、人工智能等课题研究，邀请全球外部专家研讨，帮助高层统一战略方向，助力华为云计算与智能业务的设立。"
+      - "愿景使命：2017年牵头集团愿景使命研究，对标微软、GE等企业，将愿景使命纳入战略管理体系，促成华为愿景向「数字世界、智能世界」转变。"
+      - "新业务进入战略：2014年独立完成中国云服务行业研究（使用Python进行数据分析），识别应优先进入的行业（银行与保险）与应回避的行业（化工）；参与云服务战略设计，被高管层采纳为集团重点战略；参与集团年度811规划，负责云服务、大IT战略部分。"
+      - "金融行业战略：2017年独立完成26家欧洲主要银行的战略扫描，提出华为金融科技两个突破方向，纳入企业BG欧洲金融行业年度战略规划及培训材料；2016年制定EBG金融行业中国洞察及集团金融行业年度战略规划内容。"
+      - "区域与资本市场：负责华为拉美战略规划（愿景使命、业务与市场、组织与资源）；参与2017年欧洲非评级债券发行，向投资者阐述华为战略并答疑。"
+      - "方法论与网络：参与集团能力中心，梳理设计集团战略方法体系；搭建华为内外部专家网络。"
+
+  - org_en: "SUNIVO Group"
+    org_zh: "春宇集团（SUNIVO）"
+    role_en: "General Manager, Strategy Planning"
+    role_zh: "战略规划总经理"
+    start: "2013.08"
+    end: "2014.02"
+    location_en: "Shanghai"
+    location_zh: "上海"
+    bullets_en:
+      - "Built the strategy function from scratch for a supply-chain services platform, managing industry research, platform planning and customer experience; integrated four separate online businesses into one platform blueprint and roadmap."
+      - "Within six months set up three management systems — customer experience, product lifecycle management and marketing program management — and developed the customer-experience and industry-research directors and their teams."
+    bullets_zh:
+      - "为供应链服务平台从零组建战略部门，管理行业研究、平台规划、客户体验三个部门；将分散的4个互联网业务整合为完整的平台战略蓝图与路线图。"
+      - "半年内建立客户体验、产品生命周期管理、市场营销项目管理三套体系；培养客户体验总监、行业研究总监及其执行团队。"
+
+  - org_en: "Accenture"
+    org_zh: "埃森哲（Accenture）"
+    role_en: "Strategy Consulting Manager, Communications, Media & High Tech (also Health & Public Service)"
+    role_zh: "战略咨询经理（通信、媒体与高科技行业，兼医疗与公共服务）"
+    start: "2010.03"
+    end: "2013.08"
+    location_en: "Shanghai"
+    location_zh: "上海"
+    bullets_en:
+      - "Strategy to execution: Delivered China Telecom Xinjiang's customer-experience strategy, operating initiatives and implementation plan, and guided the pilot — 2nd place, China region, in Accenture's 2013 global innovation project awards."
+      - "Corporate strategy: Led the 12th Five-Year strategic plan and corporate strategy for North China Power Engineering."
+      - "Insurance and healthcare: Recommended an SME business strategy for China Pacific Insurance (CPIC); designed the China market-entry strategy for the College of American Pathologists; planned the operating and IT strategy for Peking University International Hospital."
+      - "Market entry and investment: Designed Huawei's cloud-computing market and data-center strategy; completed commercial due diligence and development strategy for China Mobile Multimedia Broadcasting (CMMB)."
+      - "Innovation strategy: Designed online-video product and R&D strategy for China Telecom; proposed R&D innovation strategies for Huayi Group and China Tobacco Shanghai; delivered benchmarking and business-development advice to high-tech firms."
+    bullets_zh:
+      - "战略到落地：交付中国电信新疆公司客户体验战略、运营举措与落地方案，并指导试点实施，获2013年埃森哲全球创新项目奖中国区第二名。"
+      - "企业战略规划：领导并交付华北电力工程设计院「十二五」战略规划与企业战略。"
+      - "保险与医疗：为太平洋保险提出中小企业业务战略建议；设计美国病理学家协会进入中国市场战略；规划北大国际医院建设运营战略及IT战略。"
+      - "市场进入与投资：设计华为云计算市场及数据中心战略；完成中国移动多媒体广播（CMMB）商业尽职调查与发展战略。"
+      - "创新战略：为中国电信设计在线视频产品与研发战略；为华谊集团、中国烟草上海提出研发创新战略；为展讯等企业提供行业对标与业务拓展建议。"
+
+  - org_en: "Wondertek Information Technology"
+    org_zh: "上海网达信息技术有限公司（Wondertek）"
+    role_en: "Deputy General Manager (GM, Telecom Division; GM, Operations Center)"
+    role_zh: "公司副总经理（电信事业部总经理、运营中心总经理）"
+    start: "2005.05"
+    end: "2008.10"
+    location_en: "Shanghai"
+    location_zh: "上海"
+    bullets_en:
+      - "Growth: Built the Telecom Division from zero to 70 people and grew its annual revenue from RMB 0.3M to RMB 16M in three years."
+      - "Turnaround: Took over China Mobile Shanghai's enterprise SMS platform project and cut client complaints by 90% within a year; it became a star project for several years. Served as project director and CTO for 15 China Mobile Shanghai projects."
+      - "Engineering excellence: Rebuilt the R&D process and quality system (MySQL and Hibernate-based development), shortening development cycles by 40% and cutting defect rates by 70%; designed a contribution-based R&D performance model."
+      - "Operations: As GM of the Operations Center (2008), ran finance, commercial and HR functions and shortened the average collection period by 1.5 months."
+      - "Pricing and people: Designed a hybrid pricing model for the SMS platform that won China's top two SMS advertising companies; developed three division-manager successors and several project managers."
+    bullets_zh:
+      - "业务增长：从零组建电信事业部至70人，3年内年收入由30万元增至1,600万元。"
+      - "项目扭转：扭转上海移动企信通项目，客户投诉一年内下降90%，此后连续多年成为明星项目；担任15个上海移动项目的项目总监及CTO。"
+      - "体系建设：重构研发流程与质量体系（基于MySQL、Hibernate开发），开发周期缩短40%，缺陷率降低70%；设计基于变更贡献度的研发绩效模型。"
+      - "经营管理：2008年任运营中心总经理，负责财务、商务与人力资源，统筹公司运营流程与质量体系，平均回款周期缩短1.5个月。"
+      - "定价与人才：设计短信平台混合定价模式，赢得国内前两大短信广告公司；培养3名部门经理接班人及多名项目经理。"
+
+  - org_en: "Lucent Technologies"
+    org_zh: "朗讯科技（Lucent）"
+    role_en: "Project Manager & Software Architect, Optical Networking Group"
+    role_zh: "项目经理、软件架构师（光网络事业部）"
+    start: "2000.10"
+    end: "2005.05"
+    location_en: "Shanghai"
+    location_zh: "上海"
+    bullets_en:
+      - "Owned requirements, architecture and change management for three products, working with MySQL and Hibernate; managed 11 R&D projects and shipped 11 software releases over five years."
+      - "Chaired the daily Change Control Board and weekly architects' meeting; designed six major software architectures, resolved about 470 change requests, reduced defects by 15%, and helped the company achieve ISO 9000 and CMM certification."
+    bullets_zh:
+      - "负责3个产品的需求、架构与变更管理（使用MySQL、Hibernate），5年管理11个研发项目、发布11个软件版本。"
+      - "主持每日变更控制委员会及每周架构师会议，设计6个主要软件架构，解决约470项技术变更，缺陷减少15%，协助公司通过ISO9000与CMM认证。"
+
+education:
+  - school_en: "Cheung Kong Graduate School of Business (CKGSB)"
+    school_zh: "长江商学院"
+    degree_en: "MBA (including exchange at the Darden School of Business, University of Virginia)"
+    degree_zh: "工商管理硕士 MBA（含美国弗吉尼亚大学达顿商学院交换）"
+    start: "2008.08"
+    end: "2010.03"
+  - school_en: "Shanghai Jiao Tong University"
+    school_zh: "上海交通大学"
+    degree_en: "Ph.D., Communication & Information System"
+    degree_zh: "通信与信息系统 工学博士"
+    start: "1997.09"
+    end: "2000.10"
+  - school_en: "Shanghai Jiao Tong University"
+    school_zh: "上海交通大学"
+    degree_en: "M.S., Communication & Electronic System"
+    degree_zh: "通信与电子系统 工学硕士"
+    start: "1995.09"
+    end: "1997.07"
+  - school_en: "Shanghai Jiao Tong University"
+    school_zh: "上海交通大学"
+    degree_en: "B.S., Communication Engineering"
+    degree_zh: "通信工程 工学学士"
+    start: "1991.09"
+    end: "1995.07"
+
+honors_en:
+  - "Shanghai Outstanding Graduate (1995, 2000)"
+  - "National Excellence Scholarship, First Prize (1996)"
+  - "Huawei Scholarship, First Prize (1997)"
+honors_zh:
+  - "上海市优秀毕业生（1995、2000）"
+  - "国家优秀奖学金一等奖（1996）"
+  - "华为奖学金一等奖（1997）"
+
+skills:
+  - group_en: "Strategy"
+    group_zh: "战略"
+    items_en: ["Corporate & digital strategy", "Market entry", "Vision & mission", "Strategy to execution", "Pilot-to-scale rollout"]
+    items_zh: ["集团与数字化战略", "市场进入", "愿景使命", "战略落地", "试点到推广"]
+  - group_en: "Product"
+    group_zh: "产品"
+    items_en: ["Payment products", "Rules-engine & low-code platforms", "Workflow automation", "Go-to-market", "Vendor selection & RFPs"]
+    items_zh: ["支付产品", "规则引擎与低代码平台", "流程自动化", "市场推广策略", "供应商遴选与招标"]
+  - group_en: "Industries"
+    group_zh: "行业"
+    items_en: ["Cross-border payments", "Transaction banking", "Cloud & ICT", "Telecom", "Insurance & healthcare"]
+    items_zh: ["跨境支付", "交易银行", "云与ICT", "电信", "保险与医疗"]
+  - group_en: "AI"
+    group_zh: "AI"
+    items_en: ["LLM application pilots (RAG, document extraction)", "Agent architecture coursework"]
+    items_zh: ["大模型应用试点（RAG、单据信息提取）", "Agent架构师课程"]
+  - group_en: "Tools"
+    group_zh: "工具"
+    items_en: ["Python", "SQLite", "Power BI", "Microsoft Access", "SharePoint", "MySQL", "Hibernate", "Git", "Cursor", "Claude Code"]
+    items_zh: ["Python", "SQLite", "Power BI", "Microsoft Access", "SharePoint", "MySQL", "Hibernate", "Git", "Cursor", "Claude Code"]
+
+languages_en: "Mandarin (native), English (professional working language), Shanghainese"
+languages_zh: "中文（母语）、英文（工作语言，熟练）、上海话"
+
+personal_en: "Volunteer docent in the Bronze Gallery of the Shanghai Museum (2001–2008)."
+personal_zh: "2001–2008年任上海博物馆青铜馆志愿讲解员。"

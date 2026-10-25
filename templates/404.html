@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="wrap narrow page-head notfound">
+  <p class="eyebrow">404</p>
+  <h1>{{ ui.not_found_title }} <span class="muted">/ {{ ui_zh.not_found_title }}</span></h1>
+  <p class="lede">{{ ui.not_found_text }}<br>{{ ui_zh.not_found_text }}</p>
+  <p class="actions"><a class="btn btn-primary" href="/">{{ ui.go_home }}</a> <a class="btn" href="/zh/">{{ ui_zh.go_home }}</a></p>
+</div>
+{% endblock %}

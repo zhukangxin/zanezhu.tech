@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="wrap narrow">
+  <header class="page-head">
+    <p class="eyebrow">{{ p(profile, 'name', lang) }}</p>
+    <h1>{{ ui.articles_title }}</h1>
+    <p class="lede">{{ ui.articles_intro }}</p>
+  </header>
+  {% if articles %}
+  <ul class="post-list large">
+    {% for a in articles %}{% include "_article_item.html" %}{% endfor %}
+  </ul>
+  {% else %}
+  <p class="empty">{{ ui.articles_empty }}</p>
+  {% endif %}
+</div>
+{% endblock %}

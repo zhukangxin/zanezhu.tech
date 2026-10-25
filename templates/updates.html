@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="wrap narrow">
+  <header class="page-head">
+    <p class="eyebrow">{{ p(profile, 'name', lang) }}</p>
+    <h1>{{ ui.updates_title }}</h1>
+    <p class="lede">{{ ui.updates_intro }}</p>
+  </header>
+  {% if years %}
+  {% for year, items in years %}
+  <section class="year-group">
+    <h2 class="year">{{ year }}</h2>
+    <ul class="update-list">
+      {% for u in items %}
+      <li id="{{ u.slug }}">
+        <time datetime="{{ u.date.isoformat() }}">{{ u.date_str }}</time>
+        <div>
+          <h3 class="update-title">{{ u.title }}</h3>
+          {% if u.html %}<div class="prose small">{{ u.html | safe }}</div>{% endif %}
+          {% if u.link %}<p><a href="{{ u.link }}" rel="noopener" target="_blank">{{ u.link | replace('https://','') | truncate(60) }} ↗</a></p>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+  {% else %}
+  <p class="empty">{{ ui.updates_empty }}</p>
+  {% endif %}
+</div>
+{% endblock %}

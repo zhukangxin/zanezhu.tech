@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">{{ p(profile, 'location', lang) }}</p>
+      <h1>{{ p(profile, 'name', lang) }}{% if lang == 'zh' %}<span class="alt-name">Kangxin (Zane) Zhu</span>{% else %}<span class="alt-name">朱康辛</span>{% endif %}</h1>
+      <p class="headline">{{ p(profile, 'headline', lang) }}</p>
+      <p class="intro">{{ p(profile, 'intro', lang) }}</p>
+      <p class="summary">{{ p(profile, 'summary', lang) }}</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="{{ pre }}/resume/">{{ ui.hero_cta_resume }}</a>
+        <a class="btn" href="mailto:{{ profile.email }}">{{ ui.hero_cta_contact }}</a>
+        <a class="btn btn-ghost" href="{{ profile.linkedin }}" rel="me noopener" target="_blank">LinkedIn ↗</a>
+      </div>
+    </div>
+    <aside class="hero-card" aria-label="{{ ui.path_title }}">
+      {% if profile.avatar %}<img class="avatar" src="{{ profile.avatar }}" alt="{{ p(profile, 'name', lang) }}" width="112" height="112">{% endif %}
+      <p class="card-label">{{ ui.path_title }}</p>
+      <ol class="path">
+        {% for job in profile.experience %}
+        <li><span class="path-org">{{ p(job, 'org', lang) }}</span><span class="path-years">{{ job.start[:4] }}–{{ job.end[:4] if job.end else ui.present }}</span></li>
+        {% endfor %}
+      </ol>
+      <p class="card-edu">{% for e in profile.education[:2] %}{{ p(e, 'school', lang) }}{% if not loop.last %} · {% endif %}{% endfor %}</p>
+    </aside>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="section-title">{{ ui.highlights_title }}</h2>
+    <div class="stats">
+      {% for h in profile.highlights %}
+      <div class="stat">
+        <p class="stat-value">{{ p(h, 'value', lang) }}</p>
+        <p class="stat-label">{{ p(h, 'label', lang) }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-split">
+  <div class="wrap split">
+    <div>
+      <div class="section-head">
+        <h2 class="section-title">{{ ui.latest_articles }}</h2>
+        <a class="more" href="{{ pre }}/articles/">{{ ui.see_all }} →</a>
+      </div>
+      {% if articles %}
+      <ul class="post-list">
+        {% for a in articles %}{% include "_article_item.html" %}{% endfor %}
+      </ul>
+      {% else %}
+      <p class="empty">{{ ui.articles_empty }}</p>
+      {% endif %}
+    </div>
+    <div>
+      <div class="section-head">
+        <h2 class="section-title">{{ ui.latest_updates }}</h2>
+        <a class="more" href="{{ pre }}/updates/">{{ ui.see_all }} →</a>
+      </div>
+      {% if updates %}
+      <ul class="update-list compact">
+        {% for u in updates %}
+        <li>
+          <time datetime="{{ u.date.isoformat() }}">{{ u.date_str }}</time>
+          <p class="update-title"><a href="{{ pre }}/updates/#{{ u.slug }}">{{ u.title }}</a></p>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="empty">{{ ui.updates_empty }}</p>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endblock %}

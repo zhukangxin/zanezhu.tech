@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="{{ ui.html_lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  <meta name="author" content="Kangxin (Zane) Zhu 朱康辛">
+  {% if noindex %}<meta name="robots" content="noindex">{% endif %}
+  <link rel="canonical" href="{{ canonical }}">
+  {% for l, href in alternates.items() %}
+  <link rel="alternate" hreflang="{{ site.ui[l].html_lang }}" href="{{ href }}">
+  {% endfor %}
+  {% if x_default %}<link rel="alternate" hreflang="x-default" href="{{ x_default }}">{% endif %}
+  <link rel="alternate" type="application/rss+xml" title="{{ ui.site_title }}" href="{{ base_url }}{{ pre }}/rss.xml">
+
+  <meta property="og:type" content="{{ page_type }}">
+  <meta property="og:site_name" content="{{ ui.site_title }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ canonical }}">
+  <meta property="og:locale" content="{{ ui.og_locale }}">
+  <meta property="og:image" content="{{ base_url }}/og-image.png">
+  <meta name="twitter:card" content="summary">
+
+  {% if site.google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification }}">{% endif %}
+  {% if site.bing_site_verification %}<meta name="msvalidate.01" content="{{ site.bing_site_verification }}">{% endif %}
+  {% if site.baidu_site_verification %}<meta name="baidu-site-verification" content="{{ site.baidu_site_verification }}">{% endif %}
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#16181c" media="(prefers-color-scheme: dark)">
+  <link rel="stylesheet" href="/css/site.css">
+  {% for ld in json_ld or [] %}
+  <script type="application/ld+json">{{ ld | tojson_raw | safe }}</script>
+  {% endfor %}
+</head>
+<body class="lang-{{ lang }}">
+  <a class="skip" href="#main">{{ 'Skip to content' if lang == 'en' else '跳到正文' }}</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ pre }}/" aria-label="{{ ui.nav_home }}">
+        <span class="seal" aria-hidden="true">朱</span>
+        <span class="brand-name">{% if lang == 'zh' %}朱康辛<small>Zane Zhu</small>{% else %}Zane Zhu<small>朱康辛</small>{% endif %}</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="{{ pre }}/resume/" {% if nav == 'resume' %}aria-current="page"{% endif %}>{{ ui.nav_resume }}</a>
+        <a href="{{ pre }}/articles/" {% if nav == 'articles' %}aria-current="page"{% endif %}>{{ ui.nav_articles }}</a>
+        <a href="{{ pre }}/updates/" {% if nav == 'updates' %}aria-current="page"{% endif %}>{{ ui.nav_updates }}</a>
+        <a class="lang-switch" href="{{ alt_path }}" hreflang="{{ alt_ui.html_lang }}" lang="{{ alt_ui.html_lang }}" title="{{ ui.switch_title }}">{{ ui.switch_label }}</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-name">{{ p(profile, 'name', lang) }}</p>
+        <p class="muted">{{ p(profile, 'headline', lang) }}</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></li>
+        <li><a href="{{ profile.linkedin }}" rel="me noopener" target="_blank">LinkedIn</a></li>
+        <li><a href="{{ pre }}/rss.xml">{{ ui.rss }}</a></li>
+      </ul>
+    </div>
+    <div class="wrap footer-meta muted">© {{ year }} {{ p(profile, 'name', lang) }} · {{ ui.footer_note }}</div>
+  </footer>
+</body>
+</html>

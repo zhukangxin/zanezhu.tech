@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="wrap narrow post">
+  <header class="page-head">
+    <p class="eyebrow"><a href="{{ pre }}/articles/">← {{ ui.back_to_articles }}</a></p>
+    <h1>{{ a.title }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ a.date.isoformat() }}">{{ a.date_str }}</time>
+      {% for t in a.tags %}<span class="tag">{{ t }}</span>{% endfor %}
+    </p>
+    {% if a.publication %}
+    <p class="origin">{{ ui.originally_published }} <strong>{{ a.publication }}</strong>{% if a.external_url %} · <a href="{{ a.external_url }}" rel="noopener" target="_blank">{{ ui.read_original }} ↗</a>{% endif %}</p>
+    {% endif %}
+  </header>
+  {% if a.cover %}<img class="cover" src="{{ a.cover }}" alt="">{% endif %}
+  <div class="prose">
+    {{ a.html | safe }}
+  </div>
+  <footer class="post-foot">
+    <p>{{ p(profile, 'name', lang) }} · <a href="{{ profile.linkedin }}" rel="me noopener" target="_blank">LinkedIn</a> · <a href="mailto:{{ profile.email }}">{{ profile.email }}</a></p>
+  </footer>
+</article>
+{% endblock %}

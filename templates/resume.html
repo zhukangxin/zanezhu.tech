@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="wrap resume">
+  <header class="page-head resume-head">
+    <div>
+      <p class="eyebrow">{{ ui.resume_title }}</p>
+      <h1>{{ p(profile, 'name', lang) }}</h1>
+      <p class="headline">{{ p(profile, 'headline', lang) }}</p>
+      <p class="contact-line muted">
+        {{ p(profile, 'location', lang) }} ·
+        <a href="mailto:{{ profile.email }}">{{ profile.email }}</a> ·
+        <a href="{{ profile.linkedin }}" rel="me noopener" target="_blank">linkedin.com/in/zane-zhu</a>
+      </p>
+    </div>
+    <button class="btn no-print" type="button" onclick="window.print()">{{ ui.resume_print }}</button>
+  </header>
+
+  <p class="resume-summary">{{ p(profile, 'summary', lang) }}</p>
+
+  <section class="resume-section">
+    <h2>{{ ui.experience }}</h2>
+    {% for job in profile.experience %}
+    <div class="job">
+      <div class="job-head">
+        <h3>{{ p(job, 'org', lang) }}</h3>
+        <span class="job-period">{{ fmt_period(job.start, job.end, lang, ui.present) }}</span>
+      </div>
+      <p class="job-role">{{ p(job, 'role', lang) }}{% if p(job, 'location', lang) %}<span class="muted"> · {{ p(job, 'location', lang) }}</span>{% endif %}</p>
+      <ul>
+        {% for b in p(job, 'bullets', lang) %}
+        {% set parts = b.split('：', 1) if lang == 'zh' else b.split(': ', 1) %}
+        {% if parts|length == 2 and parts[0]|length < 28 %}
+        <li><strong>{{ parts[0] }}{{ '：' if lang == 'zh' else ':' }}</strong> {{ parts[1] }}</li>
+        {% else %}
+        <li>{{ b }}</li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </section>
+
+  <div class="resume-cols">
+    <section class="resume-section">
+      <h2>{{ ui.education }}</h2>
+      {% for e in profile.education %}
+      <div class="edu">
+        <div class="job-head">
+          <h3>{{ p(e, 'school', lang) }}</h3>
+          <span class="job-period">{{ e.start }} – {{ e.end }}</span>
+        </div>
+        <p class="job-role">{{ p(e, 'degree', lang) }}</p>
+      </div>
+      {% endfor %}
+      <h2 class="sub">{{ ui.honors }}</h2>
+      <ul class="plain">
+        {% for h in p(profile, 'honors', lang) %}<li>{{ h }}</li>{% endfor %}
+      </ul>
+    </section>
+
+    <section class="resume-section">
+      <h2>{{ ui.skills }}</h2>
+      {% for s in profile.skills %}
+      <div class="skill-group">
+        <h3>{{ p(s, 'group', lang) }}</h3>
+        <p class="chips">{% for i in p(s, 'items', lang) %}<span class="chip">{{ i }}</span>{% endfor %}</p>
+      </div>
+      {% endfor %}
+      <h2 class="sub">{{ ui.languages }}</h2>
+      <p>{{ p(profile, 'languages', lang) }}</p>
+      {% if p(profile, 'personal', lang) %}
+      <h2 class="sub">{{ ui.beyond_work }}</h2>
+      <p>{{ p(profile, 'personal', lang) }}</p>
+      {% endif %}
+    </section>
+  </div>
+</article>
+{% endblock %}

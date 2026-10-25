@@ -1,0 +1,17 @@
+<li class="post-item">
+  <time datetime="{{ a.date.isoformat() }}">{{ a.date_str }}</time>
+  <h3 class="post-title">
+    {% if a.has_page %}
+    <a href="{{ pre }}/articles/{{ a.slug }}/">{{ a.title }}</a>
+    {% else %}
+    <a href="{{ a.external_url }}" rel="noopener" target="_blank">{{ a.title }} <span class="ext" aria-label="{{ ui.external }}">↗</span></a>
+    {% endif %}
+  </h3>
+  {% if a.description %}<p class="post-desc">{{ a.description }}</p>{% endif %}
+  {% if a.publication or a.tags %}
+  <p class="post-meta">
+    {% if a.publication %}<span class="pub">{{ a.publication }}</span>{% endif %}
+    {% for t in a.tags %}<span class="tag">{{ t }}</span>{% endfor %}
+  </p>
+  {% endif %}
+</li>
