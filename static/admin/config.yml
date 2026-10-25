@@ -2,7 +2,7 @@
 # 唯一需要你修改的地方：把 YOUR_GITHUB_USERNAME 换成你的 GitHub 用户名
 backend:
   name: github
-  repo: YOUR_GITHUB_USERNAME/zanezhu.tech
+  repo: zhukangxin/zanezhu.tech
   branch: main
   commit_messages:
     create: "新建 {{collection}}：{{slug}}"
