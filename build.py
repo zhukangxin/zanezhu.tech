@@ -108,6 +108,7 @@ def load_collection(kind, lang):
             "external_url": meta.get("external_url") or "",
             "link": meta.get("link") or "",
             "cover": meta.get("cover") or "",
+            "pdf": meta.get("pdf") or "",
             "url": meta.get("url") or "",
             "repo": meta.get("repo") or "",
             "featured": bool(meta.get("featured")),
@@ -116,7 +117,8 @@ def load_collection(kind, lang):
         }
         item["date_str"] = fmt_date(item["date"], lang)
         # 只填写了外部链接、没有正文的文章，直接跳转到原文
-        item["has_page"] = bool(body_html) if kind == "articles" else False
+        # 有正文或附带 PDF 的文章生成独立页面；只有外部链接的文章直接跳到原文
+        item["has_page"] = bool(body_html or item["pdf"]) if kind == "articles" else False
         items.append(item)
     items.sort(key=lambda x: x["date"], reverse=True)
     return items

@@ -67,6 +67,7 @@ collections:
       - { label: "最初发表于（可选）", name: publication, widget: string, required: false, hint: "例如：微信公众号「XXX」、《金融电子化》" }
       - { label: "原文链接（可选）", name: external_url, widget: string, required: false, hint: "只填链接、不写正文时，文章列表会直接跳转到原文" }
       - { label: "封面图（可选）", name: cover, widget: image, required: false }
+      - { label: "PDF 文件（可选）", name: pdf, widget: file, required: false, media_folder: "/static/files", public_folder: "/files" }
       - { label: "草稿（勾选后不在网站显示）", name: draft, widget: boolean, default: false, required: false }
       - { label: "正文", name: body, widget: markdown, required: false }
 
@@ -87,6 +88,7 @@ collections:
       - { label: "Originally published in (optional)", name: publication, widget: string, required: false }
       - { label: "Original link (optional)", name: external_url, widget: string, required: false }
       - { label: "Cover image (optional)", name: cover, widget: image, required: false }
+      - { label: "PDF 文件（可选）", name: pdf, widget: file, required: false, media_folder: "/static/files", public_folder: "/files" }
       - { label: "Draft (hidden from the site)", name: draft, widget: boolean, default: false, required: false }
       - { label: "Body", name: body, widget: markdown, required: false }
 

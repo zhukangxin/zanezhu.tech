@@ -13,6 +13,17 @@
     {% endif %}
   </header>
   {% if a.cover %}<img class="cover" src="{{ a.cover }}" alt="">{% endif %}
+  {% if a.pdf %}
+  <div class="pdf-box">
+    <p class="pdf-actions">
+      <a class="btn btn-primary" href="{{ a.pdf }}" target="_blank" rel="noopener">{{ ui.pdf_open }}</a>
+      <a class="btn" href="{{ a.pdf }}" download>{{ ui.pdf_download }}</a>
+    </p>
+    <object class="pdf-embed" data="{{ a.pdf }}#view=FitH" type="application/pdf">
+      <p class="muted">{{ ui.pdf_fallback }} <a href="{{ a.pdf }}">{{ ui.pdf_download }}</a></p>
+    </object>
+  </div>
+  {% endif %}
   <div class="prose">
     {{ a.html | safe }}
   </div>
