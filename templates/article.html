@@ -27,6 +27,19 @@
   <div class="prose">
     {{ a.html | safe }}
   </div>
+  <aside class="copyright" aria-label="{{ '版权声明' if lang == 'zh' else 'Copyright notice' }}">
+    {% if lang == 'zh' %}
+    <p class="copyright-title">版权声明</p>
+    <p>© {{ a.date.year }} 朱康辛（Kangxin Zane Zhu）。保留所有权利。</p>
+    <p>本文为作者原创。如需转载或引用全文，请先联系作者获得授权，并注明作者姓名及原文链接：<a href="{{ canonical }}">{{ canonical }}</a>。合理引用片段请注明出处。</p>
+    <p>文中观点仅代表作者个人，不代表任何现任或前任雇主的立场，也不构成投资或法律建议。</p>
+    {% else %}
+    <p class="copyright-title">Copyright notice</p>
+    <p>© {{ a.date.year }} Kangxin (Zane) Zhu. All rights reserved.</p>
+    <p>This is an original article. To republish it in full, please contact the author for permission and credit the author with a link to the original: <a href="{{ canonical }}">{{ canonical }}</a>. Short excerpts may be quoted with attribution.</p>
+    <p>The views expressed are the author's own and do not represent any current or former employer. Nothing here is investment or legal advice.</p>
+    {% endif %}
+  </aside>
   <footer class="post-foot">
     <p>{{ p(profile, 'name', lang) }} · <a href="{{ profile.linkedin }}" rel="me noopener" target="_blank">LinkedIn</a> · <a href="mailto:{{ profile.email }}">{{ profile.email }}</a></p>
   </footer>
