@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 500" role="img" aria-label="Five payment layers, mirroring the five layers telecom separated long ago" font-family="-apple-system,'Segoe UI','PingFang SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif" font-size="14">
+<rect width="860" height="500" rx="14" fill="#fffdf8"/>
+<text x="24" y="40" font-size="18" font-weight="600" fill="#1b1d22">Five payment layers, mirroring the five layers telecom separated long ago</text>
+<text x="189.0" y="78" text-anchor="middle" font-size="13" fill="#5b5f68">Telecom (already decoupled)</text>
+<text x="618.0" y="78" text-anchor="middle" font-size="13" fill="#5b5f68">Cross-border payments (to decouple)</text>
+<line x1="354" x2="400" y1="126.0" y2="126.0" stroke="#9a958a" stroke-width="1.4" stroke-dasharray="4 4"/>
+<rect x="24" y="96" width="330" height="60" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<rect x="400" y="96" width="436" height="60" rx="8" fill="#e2ece9" stroke="#0f5b57" stroke-width="1.4"/>
+<text x="40" y="121" font-weight="600" fill="#1b1d22">Service layer: IN SCP / IMS</text>
+<text x="40" y="142" font-size="12.5" fill="#5b5f68">Logic centralized, apart from switching</text>
+<text x="416" y="121" font-weight="600" fill="#0f5b57">Orchestration layer</text>
+<text x="416" y="142" font-size="12.5" fill="#5b5f68">Initiation, compliance screening, quotes, routing</text>
+<line x1="354" x2="400" y1="206.0" y2="206.0" stroke="#9a958a" stroke-width="1.4" stroke-dasharray="4 4"/>
+<rect x="24" y="176" width="330" height="60" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<rect x="400" y="176" width="436" height="60" rx="8" fill="#e2ece9" stroke="#0f5b57" stroke-width="1.4"/>
+<text x="40" y="201" font-weight="600" fill="#1b1d22">Signaling layer: SS7 / SIP</text>
+<text x="40" y="222" font-size="12.5" fill="#5b5f68">Off the voice path; confirm, then seize</text>
+<text x="416" y="201" font-weight="600" fill="#0f5b57">Messaging layer</text>
+<text x="416" y="222" font-size="12.5" fill="#5b5f68">ISO 20022, pre-validation, payee check, tracking</text>
+<line x1="354" x2="400" y1="286.0" y2="286.0" stroke="#9a958a" stroke-width="1.4" stroke-dasharray="4 4"/>
+<rect x="24" y="256" width="330" height="60" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<rect x="400" y="256" width="436" height="60" rx="8" fill="#e2ece9" stroke="#0f5b57" stroke-width="1.4"/>
+<text x="40" y="281" font-weight="600" fill="#1b1d22">Media gateway: transcoding</text>
+<text x="40" y="302" font-size="12.5" fill="#5b5f68">Independent conversion between formats</text>
+<text x="416" y="281" font-weight="600" fill="#0f5b57">FX layer</text>
+<text x="416" y="302" font-size="12.5" fill="#5b5f68">Independent FX quotes, PvP settlement</text>
+<line x1="354" x2="400" y1="366.0" y2="366.0" stroke="#9a958a" stroke-width="1.4" stroke-dasharray="4 4"/>
+<rect x="24" y="336" width="330" height="60" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<rect x="400" y="336" width="436" height="60" rx="8" fill="#e2ece9" stroke="#0f5b57" stroke-width="1.4"/>
+<text x="40" y="361" font-weight="600" fill="#1b1d22">Transport layer: trunks / IP</text>
+<text x="40" y="382" font-size="12.5" fill="#5b5f68">Moves payload only, no control</text>
+<text x="416" y="361" font-weight="600" fill="#0f5b57">Funds-movement layer</text>
+<text x="416" y="382" font-size="12.5" fill="#5b5f68">RTGS, linked fast payments, correspondents, token rails</text>
+<line x1="354" x2="400" y1="446.0" y2="446.0" stroke="#9a958a" stroke-width="1.4" stroke-dasharray="4 4"/>
+<rect x="24" y="416" width="330" height="60" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<rect x="400" y="416" width="436" height="60" rx="8" fill="#e2ece9" stroke="#0f5b57" stroke-width="1.4"/>
+<text x="40" y="441" font-weight="600" fill="#1b1d22">Subscriber data: HLR / HSS</text>
+<text x="40" y="462" font-size="12.5" fill="#5b5f68">Number separated from location; roaming</text>
+<text x="416" y="441" font-weight="600" fill="#0f5b57">Storage &amp; account layer</text>
+<text x="416" y="462" font-size="12.5" fill="#5b5f68">Accounts, wallets, tokenized deposits, stablecoins, CBDC; aliases</text>
+</svg>

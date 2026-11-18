@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 500" role="img" aria-label="支付的五层，对应电信早已拆开的五层" font-family="-apple-system,'Segoe UI','PingFang SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif" font-size="14">
+<rect width="860" height="500" rx="14" fill="#fffdf8"/>
+<text x="24" y="40" font-size="18" font-weight="600" fill="#1b1d22">支付的五层，对应电信早已拆开的五层</text>
+<text x="189.0" y="78" text-anchor="middle" font-size="13" fill="#5b5f68">电信（已解耦）</text>
+<text x="618.0" y="78" text-anchor="middle" font-size="13" fill="#5b5f68">跨境支付（应解耦）</text>
+<line x1="354" x2="400" y1="126.0" y2="126.0" stroke="#9a958a" stroke-width="1.4" stroke-dasharray="4 4"/>
+<rect x="24" y="96" width="330" height="60" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<rect x="400" y="96" width="436" height="60" rx="8" fill="#e2ece9" stroke="#0f5b57" stroke-width="1.4"/>
+<text x="40" y="121" font-weight="600" fill="#1b1d22">业务层：智能网 SCP / IMS</text>
+<text x="40" y="142" font-size="12.5" fill="#5b5f68">业务逻辑集中部署，与交换分离</text>
+<text x="416" y="121" font-weight="600" fill="#0f5b57">业务编排层</text>
+<text x="416" y="142" font-size="12.5" fill="#5b5f68">支付发起、合规筛查、报价、路由决策</text>
+<line x1="354" x2="400" y1="206.0" y2="206.0" stroke="#9a958a" stroke-width="1.4" stroke-dasharray="4 4"/>
+<rect x="24" y="176" width="330" height="60" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<rect x="400" y="176" width="436" height="60" rx="8" fill="#e2ece9" stroke="#0f5b57" stroke-width="1.4"/>
+<text x="40" y="201" font-weight="600" fill="#1b1d22">信令层：7 号信令网 / SIP</text>
+<text x="40" y="222" font-size="12.5" fill="#5b5f68">独立于话路，先确认再占线</text>
+<text x="416" y="201" font-weight="600" fill="#0f5b57">消息层</text>
+<text x="416" y="222" font-size="12.5" fill="#5b5f68">ISO 20022 报文、预校验、收款人核实、端到端追踪</text>
+<line x1="354" x2="400" y1="286.0" y2="286.0" stroke="#9a958a" stroke-width="1.4" stroke-dasharray="4 4"/>
+<rect x="24" y="256" width="330" height="60" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<rect x="400" y="256" width="436" height="60" rx="8" fill="#e2ece9" stroke="#0f5b57" stroke-width="1.4"/>
+<text x="40" y="281" font-weight="600" fill="#1b1d22">媒体网关：编解码转换</text>
+<text x="40" y="302" font-size="12.5" fill="#5b5f68">不同制式之间的独立转换</text>
+<text x="416" y="281" font-weight="600" fill="#0f5b57">兑换层</text>
+<text x="416" y="302" font-size="12.5" fill="#5b5f68">独立外汇报价，PvP 同步交收</text>
+<line x1="354" x2="400" y1="366.0" y2="366.0" stroke="#9a958a" stroke-width="1.4" stroke-dasharray="4 4"/>
+<rect x="24" y="336" width="330" height="60" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<rect x="400" y="336" width="436" height="60" rx="8" fill="#e2ece9" stroke="#0f5b57" stroke-width="1.4"/>
+<text x="40" y="361" font-weight="600" fill="#1b1d22">承载层：话路 / IP 承载网</text>
+<text x="40" y="382" font-size="12.5" fill="#5b5f68">只管搬运，不管控制</text>
+<text x="416" y="361" font-weight="600" fill="#0f5b57">资金搬运层</text>
+<text x="416" y="382" font-size="12.5" fill="#5b5f68">RTGS、快速支付互联、代理行、代币化存款通道</text>
+<line x1="354" x2="400" y1="446.0" y2="446.0" stroke="#9a958a" stroke-width="1.4" stroke-dasharray="4 4"/>
+<rect x="24" y="416" width="330" height="60" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<rect x="400" y="416" width="436" height="60" rx="8" fill="#e2ece9" stroke="#0f5b57" stroke-width="1.4"/>
+<text x="40" y="441" font-weight="600" fill="#1b1d22">用户数据层：HLR / HSS</text>
+<text x="40" y="462" font-size="12.5" fill="#5b5f68">号码与位置分离，支持漫游携号</text>
+<text x="416" y="441" font-weight="600" fill="#0f5b57">存储与账户层</text>
+<text x="416" y="462" font-size="12.5" fill="#5b5f68">银行账户、钱包、代币化存款、稳定币、CBDC；别名寻址</text>
+</svg>
