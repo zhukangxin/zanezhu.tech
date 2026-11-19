@@ -17,7 +17,7 @@
 <text x="40" y="286" font-size="11.5" fill="#1b1d22">output</text>
 <rect x="200" y="72" width="158" height="248" rx="8" fill="#ffffff" stroke="#9a958a" stroke-width="1.25"/>
 <line x1="216" x2="342" y1="112" y2="112" stroke="#ddd6c7"/>
-<text x="216" y="98" font-size="13.5" font-weight="600" fill="#0f5b57">2. Assistant</text>
+<text x="216" y="98" font-size="13.5" font-weight="600" fill="#0f5b57">2. Associate</text>
 <text x="216" y="132" font-size="10.5" font-weight="600" fill="#5b5f68">WORK</text>
 <text x="216" y="150" font-size="11.5" fill="#1b1d22">Defined tasks with</text>
 <text x="216" y="166" font-size="11.5" fill="#1b1d22">clear standards</text>
@@ -29,7 +29,7 @@
 <text x="216" y="286" font-size="11.5" fill="#1b1d22">before release</text>
 <rect x="376" y="72" width="158" height="248" rx="8" fill="#ffffff" stroke="#9a958a" stroke-width="1.25"/>
 <line x1="392" x2="518" y1="112" y2="112" stroke="#ddd6c7"/>
-<text x="392" y="98" font-size="13.5" font-weight="600" fill="#0f5b57">3. Specialist</text>
+<text x="392" y="98" font-size="13.5" font-weight="600" fill="#0f5b57">3. Senior</text>
 <text x="392" y="132" font-size="10.5" font-weight="600" fill="#5b5f68">WORK</text>
 <text x="392" y="150" font-size="11.5" fill="#1b1d22">Owns narrow,</text>
 <text x="392" y="166" font-size="11.5" fill="#1b1d22">reversible tasks</text>
@@ -41,7 +41,7 @@
 <text x="392" y="286" font-size="11.5" fill="#1b1d22">rollback ready</text>
 <rect x="552" y="72" width="158" height="248" rx="8" fill="#ffffff" stroke="#9a958a" stroke-width="1.25"/>
 <line x1="568" x2="694" y1="112" y2="112" stroke="#ddd6c7"/>
-<text x="568" y="98" font-size="13.5" font-weight="600" fill="#0f5b57">4. Operator</text>
+<text x="568" y="98" font-size="13.5" font-weight="600" fill="#0f5b57">4. Trusted Owner</text>
 <text x="568" y="132" font-size="10.5" font-weight="600" fill="#5b5f68">WORK</text>
 <text x="568" y="150" font-size="11.5" fill="#1b1d22">Multi-step workflows;</text>
 <text x="568" y="166" font-size="11.5" fill="#1b1d22">escalates edge cases</text>

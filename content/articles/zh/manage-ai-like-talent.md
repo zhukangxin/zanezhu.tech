@@ -114,7 +114,7 @@ LLM有时会"幻觉"：说出听起来正确、实际上错误的内容。人也
 
 把时间线变成计划。为每个AI使用场景明确当前阶段、下一阶段，以及晋升所需的证据，就像管理者规划新员工的成长一样。
 
-[![AI培养路线图：四个阶段（实习生、助理、专员、独当一面）逐步扩大工作范围、权限和复核方式；阶段之间有三个凭证据通过的关卡；每次模型升级或每季度进行一次复测](/images/articles/ai-talent-roadmap-zh.svg)](/images/articles/ai-talent-roadmap-zh.svg)
+[![AI培养路线图：四个阶段（实习生、初级员工、资深员工、独当一面）逐步扩大工作范围、权限和复核方式；阶段之间有三个凭证据通过的关卡；每次模型升级或每季度进行一次复测](/images/articles/ai-talent-roadmap-zh.svg)](/images/articles/ai-talent-roadmap-zh.svg)
 
 *图：AI培养路线图 —— 4个阶段、3个关卡、1个复测循环。*
 

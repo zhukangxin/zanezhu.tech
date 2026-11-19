@@ -114,7 +114,7 @@ The alternative is the way good companies treat people. Nobody hires a graduate 
 
 Turn the timeline into a plan. Give each AI use case a stage, a next stage and the evidence needed to get there, the same way a manager plans a new hire's growth.
 
-[![AI development roadmap: four stages (Intern, Assistant, Specialist, Operator) with widening work, access and review; three evidence gates between them; and a re-test loop at every model release or each quarter](/images/articles/ai-talent-roadmap-en.svg)](/images/articles/ai-talent-roadmap-en.svg)
+[![AI development roadmap: four stages (Intern, Associate, Senior, Trusted Owner) with widening work, access and review; three evidence gates between them; and a re-test loop at every model release or each quarter](/images/articles/ai-talent-roadmap-en.svg)](/images/articles/ai-talent-roadmap-en.svg)
 
 *Figure: AI development roadmap — 4 stages, 3 gates, 1 re-test loop.*
 
