@@ -227,12 +227,13 @@ Of the five predictions, 1 and 5 have the strongest evidence; 4 depends on an in
 
 ## 7. Risks and counterexamples
 
-If any of the following happens, the analogy breaks at the corresponding step.
+If any of the following five things happens, the analogy breaks at the corresponding step.
 
 1. **Regulators never require interoperability.** USDT's liquidity network effect may outlast any telecom operator's, and Prediction 4 fails. Global shares barely moved after MiCA delisted USDT — already a warning sign ([Cryptopolitan](https://cryptopolitan.com/mica-pushes-usdt-out-leaves-usdc-in)).
 2. **The CBDC variable.** Telecom had no equivalent of "the government issuing telephones directly". A digital euro or e-CNY could rewrite the non-USD landscape from the top; analysts already see the digital euro as a medium-term regulatory overhang for Visa ([The Block](https://www.theblock.co/amp/post/399405/visa-stablecoin-settlement-hits-7-billion-run-rate-pilot-expands-nine-blockchains)).
 3. **Bank consortia may repeat Great Dragon's mistakes.** China planned to merge eight state makers into Great Dragon ([Tech Monitor](https://www.techmonitor.ai/?p=160397)), but with too many shareholders and internal friction it was the first of China's big four to fade ([ITHome](https://www.ithome.com/0/533/645.htm)). The winners were Huawei and ZTE, which built their own technology in the market. A 21-bank joint company may face the same slow decision-making; its launch is still subject to closing conditions, and H1 2027 is only a target ([KuCoin](https://www.kucoin.com/blog/21-financial-institutions-usd-stablecoin-2027)).
 4. **Regulatory delay or reversal.** US agencies have already missed the one-year deadline, leaving issuers to prepare against drafts that may change ([The Block](https://www.theblock.co/post/408843/us-regulators-miss-genius-acts-one-year-deadline-for-final-stablecoin-rules)). If the rules loosen substantially, the shake-out in Prediction 1 slows down.
+5. **Crypto's glory fades and the funnel breaks.** By mid-November 2026 bitcoin was nearly 47% below its October 2025 high ([Crypto Briefing](https://cryptobriefing.com/bitcoin-selloff-tests-committed-investors/)), and major stablecoin supply fell $14.2 billion in 30 days, the largest contraction since 2022 ([The Block](https://theblock.co/news/ecosystems/2026-11-11-stablecoin-supply-drops-14-2-billion-largest-contraction-since-2022-bear-market-437907)). If the downturn persists, issuers that grow through the crypto-trading funnel slow down, the shake-out in Prediction 1 speeds up, and bank issuers and payment chains gain ground. See Section 10 of [What Stablecoins Really Are](/articles/stablecoin-private-clearing-house/).
 
 **Methodological limits**: historical analogy points to direction, not probability. The confidence levels and time windows here are the author's judgment and should be reviewed against the falsification signals over time.
 
