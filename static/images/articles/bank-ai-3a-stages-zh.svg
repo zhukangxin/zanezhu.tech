@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 404" role="img" aria-label="每个阶段都在增加能力，也始终是上层的退路" font-family="-apple-system,'Segoe UI','PingFang SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif" font-size="13">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9a958a"/></marker></defs>
+<rect width="760" height="404" rx="14" fill="#fffdf8"/>
+<text x="24" y="34" font-size="16" font-weight="600" fill="#1b1d22">每个阶段都在增加能力，也始终是上层的退路</text>
+<text x="24" y="56" font-size="12" fill="#5b5f68">All Online → Automatic → Autonomous（3A）</text>
+<path d="M240 250H262" fill="none" stroke="#9a958a" stroke-width="1.4" marker-end="url(#ar)"/>
+<path d="M480 250H502" fill="none" stroke="#9a958a" stroke-width="1.4" marker-end="url(#ar)"/>
+<path d="M612 330V362H132V334" fill="none" stroke="#9a958a" stroke-width="1.4" stroke-dasharray="4 4" marker-end="url(#ar)"/>
+<rect x="24" y="170" width="216" height="160" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<text x="40" y="194" font-size="13.5" font-weight="600" fill="#1b1d22">1 · All Online 全面线上化</text>
+<text x="40" y="214" font-size="12" fill="#5b5f68">数字化、结构化、可观测</text>
+<text x="40" y="242" font-size="12" fill="#1b1d22">结构化业务数据</text>
+<text x="40" y="260" font-size="12" fill="#1b1d22">标准化集成接口</text>
+<text x="40" y="278" font-size="12" fill="#1b1d22">数字化流程记录</text>
+<text x="40" y="296" font-size="12" fill="#1b1d22">权限与审计机制</text>
+<rect x="264" y="130" width="216" height="200" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<text x="280" y="154" font-size="13.5" font-weight="600" fill="#1b1d22">2 · Automatic 自动化</text>
+<text x="280" y="174" font-size="12" fill="#5b5f68">自动化已确认的规则</text>
+<text x="280" y="202" font-size="12" fill="#1b1d22">版本化规则库</text>
+<text x="280" y="220" font-size="12" fill="#1b1d22">异常处理</text>
+<text x="280" y="238" font-size="12" fill="#1b1d22">人工决策证据</text>
+<text x="280" y="256" font-size="12" fill="#1b1d22">内嵌治理机制</text>
+<rect x="504" y="90" width="216" height="240" rx="8" fill="#e2ece9" stroke="#0f5b57" stroke-width="2"/>
+<text x="520" y="114" font-size="13.5" font-weight="600" fill="#0f5b57">3 · Autonomous 自主化</text>
+<text x="520" y="134" font-size="12" fill="#5b5f68">在护栏内使用 AI</text>
+<text x="520" y="162" font-size="12" fill="#1b1d22">先做辅助决策</text>
+<text x="520" y="180" font-size="12" fill="#1b1d22">分级授予权限</text>
+<text x="520" y="198" font-size="12" fill="#1b1d22">确定性控制优先</text>
+<text x="520" y="216" font-size="12" fill="#1b1d22">经过演练的回退与回滚</text>
+<text x="372" y="386" font-size="12" text-anchor="middle" fill="#5b5f68">下层阶段始终是受控的退路</text>
+</svg>

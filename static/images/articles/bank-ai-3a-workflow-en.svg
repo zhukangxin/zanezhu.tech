@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 392" role="img" aria-label="Rules handle the clear cases; people handle the exceptions" font-family="-apple-system,'Segoe UI','PingFang SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif" font-size="13">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9a958a"/></marker></defs>
+<rect width="760" height="392" rx="14" fill="#fffdf8"/>
+<text x="24" y="36" font-size="16" font-weight="600" fill="#1b1d22">Rules handle the clear cases; people handle the exceptions</text>
+<path d="M192.0 110H216.0" fill="none" stroke="#9a958a" stroke-width="1.4" marker-end="url(#ar)"/>
+<path d="M384.0 110H406" fill="none" stroke="#9a958a" stroke-width="1.4" marker-end="url(#ar)"/>
+<path d="M534 110H566.0" fill="none" stroke="#9a958a" stroke-width="1.4" marker-end="url(#ar)"/>
+<path d="M470 150V206.0" fill="none" stroke="#9a958a" stroke-width="1.4" marker-end="url(#ar)"/>
+<path d="M650 134.0V206.0" fill="none" stroke="#9a958a" stroke-width="1.4" marker-end="url(#ar)"/>
+<path d="M545.0 230H575.0" fill="none" stroke="#9a958a" stroke-width="1.4" marker-end="url(#ar)"/>
+<path d="M650 254.0V340H384.0" fill="none" stroke="#9a958a" stroke-width="1.4" marker-end="url(#ar)"/>
+<path d="M300 316.0V134.0" fill="none" stroke="#9a958a" stroke-width="1.4" marker-end="url(#ar)"/>
+<rect x="24.0" y="86.0" width="168" height="48" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<text x="108" y="115" text-anchor="middle" fill="#1b1d22">Validate input data</text>
+<rect x="216.0" y="86.0" width="168" height="48" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<text x="300" y="115" text-anchor="middle" fill="#1b1d22">Apply approved rules</text>
+<rect x="566.0" y="86.0" width="168" height="48" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<text x="650" y="115" text-anchor="middle" fill="#1b1d22">Auto-execute action</text>
+<rect x="395.0" y="206.0" width="150" height="48" rx="8" fill="#e2ece9" stroke="#0f5b57" stroke-width="2"/>
+<text x="470" y="235" font-weight="600" text-anchor="middle" fill="#0f5b57">Human review queue</text>
+<rect x="575.0" y="206.0" width="150" height="48" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<text x="650" y="235" text-anchor="middle" fill="#1b1d22">Record decision</text>
+<rect x="216.0" y="316.0" width="168" height="48" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<text x="300" y="345" text-anchor="middle" fill="#1b1d22">Improve rules</text>
+<polygon points="406,110 470,70 534,110 470,150" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<text x="470" y="115" text-anchor="middle" fill="#1b1d22">Clear match?</text>
+<text x="552" y="102" font-size="12" text-anchor="middle" fill="#5b5f68">yes</text>
+<text x="480" y="174" font-size="12" fill="#5b5f68">no, with context</text>
+<text x="640" y="296" font-size="12" text-anchor="end" fill="#5b5f68">reasons and outcomes</text>
+<text x="290" y="234" font-size="12" text-anchor="end" fill="#5b5f68">evidence refines rules</text>
+</svg>

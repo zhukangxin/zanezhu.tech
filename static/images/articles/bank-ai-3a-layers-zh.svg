@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 372" role="img" aria-label="每一层支撑上层，并在上层失效时兜底" font-family="-apple-system,'Segoe UI','PingFang SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif" font-size="13">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9a958a"/></marker></defs>
+<rect width="760" height="372" rx="14" fill="#fffdf8"/>
+<text x="24" y="36" font-size="16" font-weight="600" fill="#1b1d22">每一层支撑上层，并在上层失效时兜底</text>
+<path d="M156 344V80" fill="none" stroke="#9a958a" stroke-width="1.4" marker-end="url(#ar)"/>
+<path d="M604 76V340" fill="none" stroke="#9a958a" stroke-width="1.4" stroke-dasharray="4 4" marker-end="url(#ar)"/>
+<text x="144" y="196" font-size="13.5" font-weight="600" text-anchor="end" fill="#1b1d22">向上支撑</text>
+<text x="144" y="214" font-size="12" text-anchor="end" fill="#5b5f68">Forward</text>
+<text x="144" y="234" font-size="12" text-anchor="end" fill="#5b5f68">逐层构建</text>
+<text x="616" y="196" font-size="13.5" font-weight="600" fill="#1b1d22">向下兜底</text>
+<text x="616" y="214" font-size="12" fill="#5b5f68">Backward</text>
+<text x="616" y="234" font-size="12" fill="#5b5f68">失效时回退</text>
+<rect x="176" y="72" width="408" height="56" rx="8" fill="#e2ece9" stroke="#0f5b57" stroke-width="2"/>
+<text x="192" y="96" font-size="13.5" font-weight="600" fill="#0f5b57">AI 自主决策（Autonomous）</text>
+<text x="192" y="115" font-size="12" fill="#5b5f68">只在获批的权限范围内行动</text>
+<rect x="176" y="144" width="408" height="56" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<text x="192" y="168" font-size="13.5" font-weight="600" fill="#1b1d22">确定性规则与工作流</text>
+<text x="192" y="187" font-size="12" fill="#5b5f68">已确认规则；硬性合规拦截</text>
+<rect x="176" y="216" width="408" height="56" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<text x="192" y="240" font-size="13.5" font-weight="600" fill="#1b1d22">人工复核与运营处理</text>
+<text x="192" y="259" font-size="12" fill="#5b5f68">授权审核人员与受训团队</text>
+<rect x="176" y="288" width="408" height="56" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<text x="192" y="312" font-size="13.5" font-weight="600" fill="#1b1d22">授权替代通道</text>
+<text x="192" y="331" font-size="12" fill="#5b5f68">其他授权数据源、经批准的人工流程</text>
+</svg>
