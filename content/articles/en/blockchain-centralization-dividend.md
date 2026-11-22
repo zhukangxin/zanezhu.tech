@@ -1,7 +1,7 @@
 ---
 title: "Why a Decentralized Technology Delivers a Centralization Dividend in Cross-border Payments"
 date: 2026-11-15
-description: "Blockchain makes cross-border payments faster and cheaper, but almost none of that comes from decentralization. It comes from merging ledgers and merging currencies — and the system it replaces is the one that was truly decentralized."
+description: "Blockchain makes cross-border payments faster and cheaper, but almost none of that comes from decentralization. It comes from merging ledgers and merging currencies — and the system it competes with is the one that was truly decentralized."
 tags: ["Stablecoins", "Cross-border payments", "Blockchain", "CBDC"]
 ---
 
@@ -12,7 +12,7 @@ We often hear that blockchain makes cross-border payments "faster, cheaper and a
 1. **Merging ledgers:** thousands of banks each keeping their own books becomes one ledger for the whole network.
 2. **Merging currencies:** exchanging between dozens of fiat currencies becomes everyone using the same token — in practice, mostly dollar stablecoins.
 
-Here is the irony: the system blockchain replaces is the one that was truly decentralized. And it replaces it by building a unified system with a single ledger and a single asset.
+Here is the twist: the system blockchain competes with is the one that was truly decentralized. And it replaces it by building a unified system with a single ledger and a single asset.
 
 ## 2. Traditional cross-border payments are a decentralized system
 
@@ -56,7 +56,7 @@ Every benefit traces back to unification. None comes from decentralization.
 
 So: **a unified ledger and a unified asset are sufficient for the efficiency gains; decentralization is not necessary.**
 
-## 4. The deeper irony: centralization returns at every layer
+## 4. A closer look: centralization returns at every layer
 
 1. **Highly centralized issuers:** USDT is issued by one company, Tether; USDC by Circle. They can freeze addresses, hold the reserves, and answer directly to regulators. Users are really trusting the issuer, not the chain.
 2. **Centralization of money:** the vast majority of stablecoins are pegged to the dollar. The so-called decentralized currency has, in practice, become an on-chain extension of the dollar's reach, compressing a multi-currency world into a single dollar system.
@@ -84,6 +84,6 @@ In other words, **decentralization is the means and unification is the end: a de
 
 ## 7. In one sentence
 
-> The efficiency blockchain brings to cross-border payments is the efficiency of one ledger plus one currency (the dollar). Decentralization's role is simply to make mutually distrustful parties willing to accept that unification. What it replaces is the genuinely multi-center, multi-currency correspondent network.
+> The efficiency blockchain brings to cross-border payments is the efficiency of one ledger plus one currency (the dollar). Decentralization's role is simply to make mutually distrustful parties willing to accept that unification. What it competes with is the genuinely multi-center, multi-currency correspondent network.
 
 **The implication:** if unification is what matters, the endgame for cross-border payments is not "blockchain versus traditional finance." It is **who keeps the single ledger, and which currency becomes the common unit of account.** Candidates include dollar stablecoins, multilateral CBDC platforms such as mBridge, and upgrades to existing networks such as Visa, Mastercard and SWIFT. This is really a question of monetary sovereignty and network effects; the technology is only the surface.

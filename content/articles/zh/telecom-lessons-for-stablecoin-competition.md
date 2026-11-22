@@ -9,7 +9,7 @@ cover: "/images/uploads/cover_zh_telecom-stablecoin-competition.png"
 draft: false
 ---
 
-> 相关文章：[支付可以向电信业学什么](/zh/articles/payments-learn-from-telecom/) · [跨境支付不需要区块链](/zh/articles/cross-border-payments-dont-need-blockchain/)
+> 相关文章：[支付可以向电信业学什么](/zh/articles/payments-learn-from-telecom/) · [跨境支付不一定需要共享账本](/zh/articles/cross-border-payments-dont-need-blockchain/)
 >
 > 数据截至 2026 年 11 月。本文不构成投资建议。
 
@@ -233,7 +233,7 @@ draft: false
 2. **CBDC 变量。** 电信业没有“政府直接发行电话”的对应物。数字欧元、数字人民币可能从顶层改写非美元区格局；分析师已把数字欧元视为 Visa 的中期监管压力（[The Block](https://www.theblock.co/amp/post/399405/visa-stablecoin-settlement-hits-7-billion-run-rate-pilot-expands-nine-blockchains)）。
 3. **银行联盟可能重蹈巨龙的覆辙。** 中国曾计划合并八家国有厂组建巨龙（[Tech Monitor](https://www.techmonitor.ai/?p=160397)），但巨龙因股东多、治理内耗最早没落（[IT之家](https://www.ithome.com/0/533/645.htm)）。真正胜出的是在市场中自主研发的华为、中兴。21 家银行的联合公司可能面临同样的决策速度问题；其发行仍受成立条件限制，2027 年上半年只是目标（[KuCoin](https://www.kucoin.com/blog/21-financial-institutions-usd-stablecoin-2027)）。
 4. **监管实施延误或反复。** 美国监管机构已经错过一年期限，发行方只能按可能变动的草案准备（[The Block](https://www.theblock.co/post/408843/us-regulators-miss-genius-acts-one-year-deadline-for-final-stablecoin-rules)）。若规则大幅放松，预测 1 的洗牌会变慢。
-5. **加密币高光退去，引流失效。** 比特币 2026 年 11 月中旬较 2025 年 10 月高点下跌近 47%（[Crypto Briefing](https://cryptobriefing.com/bitcoin-selloff-tests-committed-investors/)），主要稳定币供应 30 天减少 142 亿美元，为 2022 年以来最大收缩（[The Block](https://theblock.co/news/ecosystems/2026-11-11-stablecoin-supply-drops-14-2-billion-largest-contraction-since-2022-bear-market-437907)）。若行情持续下行，靠加密交易引流的发行方增长放缓，预测 1 的洗牌会加快，银行发行方和支付型链相对受益。不过到目前为止，这次收缩只占稳定币总量的约 5%，“一泻千里”的是加密币价格，而不是稳定币供应。详细分析见[《稳定币的本质：无需清算所牌照的企业私有清算所》第十节](/zh/articles/stablecoin-private-clearing-house/)。
+5. **加密市场持续低迷，交易驱动的用户减少。** 比特币 2026 年 11 月中旬较 2025 年 10 月高点下跌近 47%（[Crypto Briefing](https://cryptobriefing.com/bitcoin-selloff-tests-committed-investors/)），主要稳定币供应 30 天减少 142 亿美元，为 2022 年以来最大收缩（[The Block](https://theblock.co/news/ecosystems/2026-11-11-stablecoin-supply-drops-14-2-billion-largest-contraction-since-2022-bear-market-437907)）。若行情持续下行，靠加密交易引流的发行方增长放缓，预测 1 的洗牌会加快，银行发行方和支付型链相对受益。不过到目前为止，这次收缩只占稳定币总量的约 5%，“一泻千里”的是加密币价格，而不是稳定币供应。详细分析见[《稳定币的经济学：发行方为什么像一家私有跨境清算所》第十节](/zh/articles/stablecoin-private-clearing-house/)。
 
 **方法论局限**：历史类比只能提示方向，不能提供概率。文中的“置信度”和时间窗口是作者判断，应按证伪信号定期复核。
 
