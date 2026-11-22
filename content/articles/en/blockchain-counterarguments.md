@@ -1,7 +1,7 @@
 ---
-title: "Is Blockchain Really Irreplaceable? Answers to Eight Objections (Part 2)"
+title: "Where Blockchain Earns Its Place: Answers to Eight Objections (Part 2)"
 date: 2026-11-19
-description: "Last time I argued that blockchain will be taken apart and replaced like the file system. This issue answers the eight strongest objections: trust, redundancy, evolution, adoption, programmability, network effects, censorship resistance and monolithic scaling."
+description: "Last time I argued that blockchain is likely to be unbundled into layers, as databases were. This issue tests that view against the eight strongest objections: trust, redundancy, evolution, adoption, programmability, network effects, censorship resistance and monolithic scaling."
 tags: ["Blockchain","Stablecoins","Cross-border payments","Trust","Security"]
 publication: ""
 external_url: ""
@@ -9,9 +9,9 @@ cover: "/images/uploads/cover_en_blockchain-counterarguments.png"
 draft: false
 ---
 
-[Last time](/articles/blockchain-as-file-system/) I argued that a blockchain is, at heart, a log file system that ties data and code together, and that it will be taken apart and replaced just like the file systems of the 1960s [1].
+[Last time](/articles/blockchain-as-file-system/) I argued that a blockchain is, at heart, a log file system that ties data and code together, and that, like the file systems of the 1960s, it is likely to be unbundled into layers [1].
 
-Not everyone will agree. In this issue I list the eight strongest objections I can think of and answer each one. The first two matter most, so I spend more time on them.
+Not everyone will agree, and some objections show where blockchain does earn its place. In this issue I list the eight strongest objections I can think of and answer each one. The first two matter most, so I spend more time on them.
 
 ## Objection 1: "The point of blockchain is that you don't have to trust anyone"
 
@@ -63,7 +63,7 @@ The third is the number of copies. In theory, tolerating f bad actors takes only
 
 **"But Bitcoin has pruned nodes that don't keep full history."** Pruning has two limits. First, a pruned node joining the network still has to download and verify the entire history before deleting the old parts, so it saves disk, not time or bandwidth. Second, a pruned node can only serve roughly the last two days of blocks to others [16]; full history still depends on a small number of archive nodes. Pruning just shifts the cost from everyone to a few. Databases have long had the same split, with hot data online and history archived, but with a clear owner and audits. Blockchain reinvented that split in a way no one is responsible for.
 
-## Objection 3: "Blockchain is evolving, not being replaced"
+## Objection 3: "Blockchain is evolving, not being displaced"
 
 **My view:** That is my prediction in different words. From moving execution to layer 2 in 2020 [17] to verifying proofs on the main chain in 2026 [18], Ethereum's direction has always been to separate execution from verification. Follow that path and the "chain" ends up as an ordering log. Whether we still call it a blockchain is just a question of naming.
 
@@ -95,13 +95,13 @@ Put the eight answers together and they come down to three points:
 - The cost of full replication only grows, and even Ethereum is looking for ways to store less.
 - Every step blockchain takes to scale is a step toward taking itself apart.
 
-These three points support the conclusion of [Part 1](/articles/blockchain-as-file-system/).
+These three points support the conclusion of [Part 1](/articles/blockchain-as-file-system/). They do not say blockchain is useless. They say it is a specialized tool: worth its cost where parties share no common operator and need public verifiability, and usually not worth it inside regulated institutional networks.
 
 If you have an objection that isn't on this list, please write to me. You'll find my contact details on the About page.
 
 **Further reading:**
 
-- [Cross-Border Payments Don't Need Blockchain: What Telecom Already Solved](/articles/cross-border-payments-dont-need-blockchain/) (which answers ten further objections)
+- [Cross-Border Payments Without a Shared Ledger: What Telecom Already Solved](/articles/cross-border-payments-dont-need-blockchain/) (which answers ten further objections)
 - [When Do You Actually Need a Blockchain? Lessons from mBridge](/articles/blockchain-boundaries-mbridge/) (which discusses vendor risk)
 
 ## References

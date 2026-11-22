@@ -12,7 +12,7 @@ Cross-border payments are slow, expensive and opaque. The root cause is not a mi
 
 Telecom faced the same problem in the 1970s and 1980s. Its answer was Signaling System No. 7 (SS7): pull control signaling out of the voice path and run it on a separate signaling network. The Intelligent Network, mobile roaming, SMS and today's IMS all grew out of that single act of decoupling.
 
-Payments are on the same road. SWIFT took the first step by separating messages from money. But funds movement, FX conversion and account storage are still bound to correspondent relationships. Blockchain goes the opposite way, bundling business logic, transaction execution and ledger storage back into one chain. This article argues that cross-border payments will inevitably move to **layered decoupling**.
+Payments are on the same road. SWIFT took the first step by separating messages from money. But funds movement, FX conversion and account storage are still bound to correspondent relationships. Blockchain goes the opposite way, bundling business logic, transaction execution and ledger storage back into one chain. This article argues that cross-border payments are moving toward **layered decoupling**, and that blockchain fits best as one layer within it.
 
 ## 1. The telecom lesson: from in-band signaling to SS7
 
@@ -153,7 +153,7 @@ From this, five predictions for the next five to ten years:
 
 ## Conclusion
 
-One act of signaling decoupling took telecom from "making phone calls" to the mobile internet. The "SS7 moment" for cross-border payments is at hand. SWIFT proved that messaging can stand on its own; the next step is to let FX conversion, funds movement and storage each stand on their own too. Blockchain, which bundles everything back together, is in-band signaling dressed up as innovation, and history has already shown us how that ends.
+One act of signaling decoupling took telecom from "making phone calls" to the mobile internet. The "SS7 moment" for cross-border payments is at hand. SWIFT proved that messaging can stand on its own; the next step is to let FX conversion, funds movement and storage each stand on their own too. A design that bundles everything back onto one chain repeats the trade-offs of in-band signaling. Blockchain will be most valuable where it serves as one well-defined layer, for storage or funds movement, inside a layered architecture.
 
 This article extends the series *What Banks and Payments Can Learn from Telecom*. See also: [What Banks Can Learn from Telecom](/articles/banks-learn-from-telecom/) · [What Payments Can Learn from Telecom](/articles/payments-learn-from-telecom/).
 

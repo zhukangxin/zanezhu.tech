@@ -1,7 +1,7 @@
 ---
-title: "Blockchain Is an Old Problem (Part 1): Why It Will Be Replaced Like the File System"
+title: "Blockchain Through the Lens of Database History (Part 1): What Coupling Data and Code Costs"
 date: 2026-11-19
-description: "A look at blockchain through the history of databases. Tying data and code together is a design the industry has already abandoned twice. Blockchain is a special-purpose, tightly coupled log file, and smart contracts are stored procedures running on that file. It will be taken apart and replaced."
+description: "A look at blockchain through the history of databases. Tying data and code together is a design the industry has already abandoned twice. Blockchain is a special-purpose, tightly coupled log, and smart contracts are stored procedures running on that log. My view is that it will evolve the way databases did: unbundled into layers, with the shared ledger kept where it is genuinely needed."
 tags: ["Blockchain","Databases","Smart contracts","Stablecoins","Cross-border payments"]
 publication: ""
 external_url: ""
@@ -11,13 +11,13 @@ draft: false
 
 Every few years the tech world produces a technology that is supposed to be different this time. Blockchain is one of them.
 
-But the more I study stablecoins and cross-border payments, the less new blockchain looks. If you know the history of databases, you will recognize its mistakes. The computer industry made them once fifty years ago, and again thirty years ago. Both times the outcome was the same.
+But the more I study stablecoins and cross-border payments, the less new blockchain looks. If you know the history of databases, you will recognize its design trade-offs. The computer industry faced them once fifty years ago, and again thirty years ago. Both times it resolved them the same way: by separating layers.
 
 **In this issue:**
 
 - At its core, a blockchain is a shared, append-only ledger with programs attached directly to it.
 - Tying data and code together is a design the industry has already abandoned twice.
-- My view: blockchain will go the same way. It will be taken apart and replaced.
+- My view: blockchain is likely to follow the same path. It will be unbundled into layers, and the shared ledger will stay where it is genuinely needed.
 
 This issue makes the case. [Part 2](/articles/blockchain-counterarguments/) answers the eight strongest objections [1].
 
@@ -100,8 +100,8 @@ To be clear, my argument covers only the data management side. Letting strangers
 
 So my view is:
 
-- **Where permissionless, trustless operation isn't needed** (most businesses and all regulated payments): blockchain will be replaced by ordinary, decoupled data systems.
-- **Where it truly is needed:** blockchain will be taken apart itself, until only a thin layer for ordering and settlement remains.
+- **Where permissionless, trustless operation isn't needed** (most internal business systems and many regulated payment flows): ordinary, decoupled data systems will usually be the simpler choice.
+- **Where it truly is needed** (open networks, parties with no common operator, public verifiability): blockchain will keep its place, and is likely to slim down into a thin layer for ordering and settlement.
 
 "What about trust?" "Isn't the redundancy there for security?" I've thought about these objections, and [Part 2](/articles/blockchain-counterarguments/) answers them one by one [1].
 
@@ -109,7 +109,7 @@ So my view is:
 
 Here are five directions I find promising.
 
-1. **Compute once, verify everywhere.** One party does the computation and produces a mathematical proof; everyone else checks it in milliseconds instead of redoing it [17]. This is the technology most likely to replace blockchain's core value.
+1. **Compute once, verify everywhere.** One party does the computation and produces a mathematical proof; everyone else checks it in milliseconds instead of redoing it [17]. This is the technology most likely to carry blockchain's core value forward.
 2. **Distributed databases with tamper-evident ledgers.** Databases like Google Spanner [18] offer global consistency and easy scaling. Add ledger tables [14], publish a fingerprint of the ledger regularly, and third parties can audit it. For regulated payments, this is the most practical option.
 3. **Transparency logs.** The HTTPS certificates we use every day are protected by Certificate Transparency [19], a public, auditable log that stops certificates from being issued fraudulently. It needs no consensus and no token. It shows that tamper-evidence and public verifiability don't require a blockchain.
 4. **Standalone log systems.** Kafka [20], for example, keeps the log, the data and the queries separate. For most businesses that need an audit trail, this is enough.
@@ -125,13 +125,13 @@ In [Part 2](/articles/blockchain-counterarguments/), I answer eight common objec
 
 **Further reading:**
 
-- [Cross-Border Payments Don't Need Blockchain: What Telecom Already Solved](/articles/cross-border-payments-dont-need-blockchain/)
+- [Cross-Border Payments Without a Shared Ledger: What Telecom Already Solved](/articles/cross-border-payments-dont-need-blockchain/)
 - [When Do You Actually Need a Blockchain? Lessons from mBridge](/articles/blockchain-boundaries-mbridge/)
 - [Why a Decentralized Technology Delivers a Centralization Dividend in Cross-border Payments](/articles/blockchain-centralization-dividend/)
 
 ## References
 
-1. [Zane Zhu, "Is Blockchain Really Irreplaceable? Answers to Eight Objections (Part 2)"](/articles/blockchain-counterarguments/)
+1. [Zane Zhu, "Where Blockchain Earns Its Place: Answers to Eight Objections (Part 2)"](/articles/blockchain-counterarguments/)
 2. E. F. Codd, "A Relational Model of Data for Large Shared Data Banks," *Communications of the ACM*, 13(6), 1970.
 3. S. Haber & W. S. Stornetta, "How to Time-Stamp a Digital Document," *Journal of Cryptology*, 3(2), 1991.
 4. [S. Nakamoto, Bitcoin: A Peer-to-Peer Electronic Cash System (2008)](https://bitcoin.org/bitcoin.pdf)

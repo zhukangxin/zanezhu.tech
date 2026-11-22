@@ -7,7 +7,7 @@ tags: ["Blockchain", "mBridge", "CBDC", "Cross-border payments", "Digital strate
 
 People often ask me whether mBridge could be built on a conventional database.
 
-Technically, most of it could. But the question of *why it still uses a blockchain* is the best way to see where blockchain's real value lies — and why, in most cases, it isn't needed at all.
+Technically, most of it could. But the question of *why it still uses a blockchain* is the best way to see where blockchain's real value lies — and how to tell the cases that need it from the cases that don't.
 
 ## 1. What mBridge is
 

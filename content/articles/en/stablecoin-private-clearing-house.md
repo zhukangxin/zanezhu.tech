@@ -1,7 +1,7 @@
 ---
-title: "What Stablecoins Really Are: Private Clearing Houses Without a Clearing-House Licence"
+title: "The Economics of Stablecoins: Why an Issuer Works Like a Private Cross-Border Clearing House"
 date: 2026-11-20
-description: "A stablecoin issuer is, economically, a privately owned cross-border clearing house. It has no clearing-house licence, markets itself with the blockchain story, draws users in through crypto's profit history, pools their fiat and earns the float. This article takes apart how it operates, how it is licensed, how it acquires users and how it makes money, analyses how the landscape shifts as crypto's glory fades, and sets out where stablecoins genuinely differ from a clearing house."
+description: "Economically, a stablecoin issuer works like a privately owned cross-border clearing house: it pools users' fiat, moves value on its own liability ledger and earns the float. This article looks at how issuers operate, how they are licensed, where their users come from and how they make money; how the landscape may shift in a crypto downturn; and where stablecoins genuinely differ from a clearing house. The aim is to understand the business model that payment and bank stablecoins will compete on."
 tags: ["Stablecoins", "Clearing houses", "Float", "Payments regulation", "Cross-border payments"]
 publication: ""
 external_url: ""
@@ -9,24 +9,24 @@ cover: "/images/uploads/cover_en_stablecoin-clearing-house.png"
 draft: false
 ---
 
-> Related: [Cross-Border Payments Don't Need Blockchain](/articles/cross-border-payments-dont-need-blockchain/) · [From Telephone Switches to Stablecoins](/articles/telecom-lessons-for-stablecoin-competition/)
+> Related: [Cross-Border Payments Without a Shared Ledger](/articles/cross-border-payments-dont-need-blockchain/) · [From Telephone Switches to Stablecoins](/articles/telecom-lessons-for-stablecoin-competition/)
 >
 > Data as of November 2026. Not investment or legal advice.
 
 ## 1. The argument
 
-**A stablecoin issuer is, in essence, a privately owned cross-border clearing house.** It does what a clearing house does, without a clearing-house licence. It markets itself with the blockchain story and draws users in through crypto's track record of making money. It pools users' fiat money, and its profit is the interest on that pool.
+**Economically, a stablecoin issuer works like a privately owned cross-border clearing house.** It does much of what a clearing house does, under issuer and money-transmission licences rather than a clearing-house licence. Its growth has been driven largely by crypto trading and by the reach of public blockchains. It pools users' fiat money, and its main revenue is the interest on that pool. Understanding this model matters for anyone building stablecoin products, because regulation is now pulling it toward the standards of payment infrastructure.
 
 The argument has five parts, plus one consequence:
 
 | Element | Meaning | Section |
 | --- | --- | --- |
 | Private clearing house | Funds concentrate in one company; transfers happen on its liability ledger | 2, 3 |
-| No clearing-house licence | Operates under money-transmission, digital-asset or newly created issuer licences, not as regulated market infrastructure | 4 |
-| Marketed through blockchain | "Decentralized" and "trustless" replace scrutiny of the issuer's credit | 5 |
-| Users drawn in by crypto's profit history | Users arrive to trade crypto; the pool rises and falls with the crypto market | 6 |
+| A different licensing regime | Operates under money-transmission, digital-asset or newly created issuer licences, not as regulated market infrastructure | 4 |
+| Distribution through blockchain | Wallet access lowers acquisition cost, but users must judge the issuer's credit, not the chain | 5 |
+| Growth tied to crypto trading | Many users arrive to trade crypto; the pool has moved with the crypto market | 6 |
 | A pool of funds | Takes in fiat without paying interest, invests reserves in Treasuries, keeps the spread | 7, 8 |
-| When the glory fades | As crypto prices fall, the funnel breaks and the landscape reshuffles | 10 |
+| In a crypto downturn | As crypto prices fall, trading-driven demand weakens and the landscape reshuffles | 10 |
 
 ## 2. Taking a stablecoin cross-border payment apart
 
@@ -61,38 +61,38 @@ International standard setters see it the same way. In 2022 the BIS Committee on
 
 The blockchain here works more like a public display board and messaging layer than an independent monetary system.
 
-## 4. No clearing-house licence: clearing-house work under lighter licences
+## 4. Licensing: clearing-house functions under issuer licences
 
-A regulated clearing institution must meet the full PFMI set of requirements on governance, comprehensive risk management, settlement finality and more ([FSB summary](https://www.fsb.org/2022/07/application-of-the-principles-for-financial-market-infrastructures-to-stablecoin-arrangements/)). Stablecoin issuers have long operated outside that framework:
+A regulated clearing institution must meet the full PFMI set of requirements on governance, comprehensive risk management, settlement finality and more ([FSB summary](https://www.fsb.org/2022/07/application-of-the-principles-for-financial-market-infrastructures-to-stablecoin-arrangements/)). Stablecoin issuers have largely been licensed under other frameworks:
 
 - **Tether's choice of domicile.** Tether, originally incorporated in the British Virgin Islands, announced in January 2025 that it would move its headquarters and subsidiaries to El Salvador after obtaining a Digital Asset Service Provider (DASP) and stablecoin-issuer licence there ([Cointelegraph](https://cointelegraph.com/news/tether-el-salvador-securing-license-property)). These are digital-asset licences, not clearing-house or banking licences.
 - **New York's finding.** In 2021 Bitfinex and Tether settled with the New York Attorney General for $18.5 million. The settlement alleged that they had misled the market about Tether's reserves while doing business in New York without appropriate licensure ([Hunton summary](https://www.hunton.com/blockchain-legal-resource/2021/03/new-york-attorney-general-announces-settlement-with-bitfinex/)).
 - **Circle's federal charter came late.** USDC launched in 2018, but Circle received a national trust bank charter from the US Office of the Comptroller of the Currency (OCC) only in July 2026, starting with digital-asset custody; USDC issuance is set to move to a New York limited-purpose trust company ([The Block](https://www.theblock.co/news/regulation/2026-07-10-stablecoin-firm-circle-wins-final-occ-approval-to-open-national-trust-bank-407876)).
 - **The new US law creates an issuer licence, not a clearing-house licence.** The GENIUS Act creates a new category of "permitted payment stablecoin issuer". Under the current drafts, new federal issuers need only a $5 million capital floor ([Finance Magnates](https://www.financemagnates.com/cryptocurrency/regulation/ten-days-to-the-genius-act-deadline-what-the-draft-rules-already-reveal/)), and the regime takes effect only on January 18, 2027 ([The Block](https://www.theblock.co/post/408843/us-regulators-miss-genius-acts-one-year-deadline-for-final-stablecoin-rules)).
 
-The upshot: USDT since 2014 and USDC since 2018 — the world's two largest "private clearing houses" — have operated for years without a clearing-house licence. Regulation is catching up, but what it adds is a new, lower-threshold issuer licence, not direct regulation as financial market infrastructure.
+The upshot: USDT since 2014 and USDC since 2018 — the two largest stablecoins — have operated for years under licensing regimes other than those for clearing houses. Regulation is catching up through new issuer licences; whether systemically important issuers will also be supervised as financial market infrastructure is still an open question.
 
-## 5. Marketed through blockchain: a technology story in place of a credit check
+## 5. Distribution through blockchain: reach comes with a credit question
 
-Few people would agree to "please deposit your dollars with an offshore private company, and we'll give you a non-interest-bearing electronic voucher". The blockchain story does four things:
+Holding a stablecoin means holding a non-interest-bearing claim on a private company. Public blockchains help issuers in four ways:
 
-1. **Trust packaging.** "Code is law" and "trustless" replace scrutiny of the issuer's own credit, so users accept a private liability as "money".
+1. **Trust framing.** Users often see "on-chain dollars" rather than a claim on an issuer, so the issuer's own credit gets less scrutiny than it deserves.
 2. **Cheap distribution.** Anyone with a wallet can connect, with no account opening or in-person checks; customer acquisition costs far less than for a bank.
 3. **A classification gap.** Early on, issuers operated in the gap over whether a stablecoin is a security, a deposit, e-money or a payment instrument, avoiding the licensing, capital and deposit-insurance requirements of banks and clearing institutions (see Section 4).
 4. **Ecosystem lock-in.** Exchanges and DeFi protocols use stablecoins as their base settlement asset, creating network effects.
 
-In other words, **blockchain is this clearing house's distribution channel and brand, not its operating mechanism.**
+In other words, **for the issuer, the blockchain works mainly as a distribution channel and a shared display ledger; the core economics sit in the reserves.**
 
-## 6. Users drawn in by crypto's profit history: the pool rises and falls with the market
+## 6. Growth tied to crypto trading: the pool has moved with the market
 
-Stablecoin users did not originally come for cross-border payments; they came to trade crypto. Bitcoin's history of gains is the most effective customer-acquisition advertising there is, and stablecoins are the chips for entering and leaving the crypto market. Four pieces of evidence:
+Most stablecoin users did not originally come for cross-border payments; they came to trade crypto, and stablecoins became the main instrument for entering and leaving the crypto market. Four pieces of evidence:
 
 1. **The main use is crypto trading.** The BIS noted in 2026 that stablecoin transaction volume is around $35 trillion a year, yet real-economy use is modest; stablecoins have mainly served on-chain trading within the crypto ecosystem ([BIS speech](https://www.bis.org/speeches/20260420-stablecoins-framing-debate)). The BIS 2026 Annual Report likewise found the main uses to be crypto trading and, to a lesser extent, offshore dollar savings in emerging markets ([Bitcoin Foundation report](https://bitcoinfoundation.org/?p=7882)).
 2. **Money flows in during bull markets.** JPMorgan estimated that about $165 billion entered the crypto market through stablecoin creation in 2020–2021 ([CoinDesk](https://www.coindesk.com/markets/2022/11/17/jpmorgan-the-shrinking-stablecoin-market-is-another-sign-of-investors-exodus-from-crypto/)).
 3. **Money flows out during bear markets.** The same report showed the largest stablecoins' combined market cap peaking at $186 billion in May 2022, then falling by $41 billion, with just under half of that due to Terra's collapse ([CoinDesk](https://www.coindesk.com/markets/2022/11/17/jpmorgan-the-shrinking-stablecoin-market-is-another-sign-of-investors-exodus-from-crypto/)). In November 2026, major stablecoin supply fell $14.2 billion in 30 days, the biggest contraction since the 2022 bear market ([The Block](https://theblock.co/news/ecosystems/2026-11-11-stablecoin-supply-drops-14-2-billion-largest-contraction-since-2022-bear-market-437907)).
 4. **The acquisition channel takes a cut.** Exchanges are the main entry point, so issuers share interest with them: Coinbase receives all reserve interest on USDC held on its platform plus 50% of the residual reserve income ([Decrypt, from Circle's IPO filing](https://decrypt.co/312757/coinbase-circles-residual-usdc-reserve-revenue-sharing-filing)).
 
-So the acquisition funnel runs: **crypto's profit history → users join an exchange → they swap fiat for stablecoins as trading chips → the fiat settles into the issuer's pool → the issuer and the exchange share the interest.** The pool's size tracks the crypto market, not demand for cross-border payments.
+So the acquisition funnel has run: **crypto trading demand → users join an exchange → they swap fiat for stablecoins as trading chips → the fiat settles into the issuer's pool → the issuer and the exchange share the interest.** So far the pool's size has tracked the crypto market more closely than demand for cross-border payments. Payment use is the part to watch.
 
 ## 7. Building the pool: a float business
 
@@ -128,11 +128,11 @@ These are the classic risks of a pooled fund — exactly what clearing-house and
 4. **Real value for some people.** For residents of high-inflation countries and people without bank accounts, it is an accessible dollar instrument; the BIS acknowledges this as the second-largest use ([Bitcoin Foundation report](https://bitcoinfoundation.org/?p=7882)).
 5. **Regulation is turning it into a bank.** The GENIUS Act and the EU's MiCA require full reserves, regular disclosure and licensed operation. That itself supports this article's argument: regulators in practice treat issuers as a kind of payment institution or quasi-bank, not as "decentralized money".
 
-## 10. When crypto's glory fades: the funnel breaks and the landscape reshuffles
+## 10. In a crypto downturn: trading demand weakens and the landscape reshuffles
 
-Stablecoins borrowed crypto's momentum. When that momentum goes, the pool shrinks first, and the competitive landscape reshuffles. This section is a projection from current data, not a price forecast.
+Stablecoins grew with crypto's momentum. When that momentum slows, trading-driven balances shrink first, and the competitive landscape reshuffles. This section is a projection from current data, not a price forecast.
 
-### 10.1 The glory is fading
+### 10.1 The downturn in numbers
 
 - **Bitcoin has roughly halved.** Bitcoin set an all-time high of about $126,000 in October 2025; by mid-November 2026 it had fallen to about $62,000, nearly 47% below the peak. US spot bitcoin ETFs saw about $1.91 billion of net outflows over seven straight trading days from November 5 to 13 ([Crypto Briefing](https://cryptobriefing.com/bitcoin-selloff-tests-committed-investors/)).
 - **The stablecoin pool is shrinking with it.** Major stablecoin supply fell $14.2 billion in 30 days, the largest contraction since the 2022 bear market, to just under $280 billion — back to its September 2025 level. USDT fell $6.6 billion in the 60 days to November 7, more than twice its drop over a similar period after FTX collapsed ([The Block](https://theblock.co/news/ecosystems/2026-11-11-stablecoin-supply-drops-14-2-billion-largest-contraction-since-2022-bear-market-437907)).
@@ -147,7 +147,7 @@ Stablecoins borrowed crypto's momentum. When that momentum goes, the pool shrink
 
 ### 10.3 Effect on the landscape: who is hit hardest, who gains ground
 
-| Type of player | Reliance on the crypto-trading funnel | Effect of the fading glory | Assessment |
+| Type of player | Reliance on the crypto-trading funnel | Effect of the downturn | Assessment |
 | --- | --- | --- | --- |
 | Yield-bearing and small issuers | Very high | Yield and size shrink together; when yields fell in November 2025, USDe's market cap halved within a month ([ForkLog](https://forklog.com/en/top-ten-dollar-stablecoins-from-would-be-monopolists-to-those-on-the-brink/)) | Most fragile; shake-out accelerates |
 | Offshore USDT | High (offshore exchanges, derivatives), cushioned by emerging-market dollar savings | Most directly hit in size; share not necessarily lower, currently about 62.8% ([The Block](https://theblock.co/news/ecosystems/2026-11-11-stablecoin-supply-drops-14-2-billion-largest-contraction-since-2022-bear-market-437907)) | Size under pressure; position stable for now |
@@ -155,11 +155,11 @@ Stablecoins borrowed crypto's momentum. When that momentum goes, the pool shrink
 | Bank-issued (21-bank consortium, HSBC's HKD stablecoin) | Low; customers come from existing bank relationships | No reliance on the crypto funnel; competition shifts to credit and distribution, banks' home ground | Relative winner |
 | Payment chains and card networks (Tempo, Visa stablecoin settlement) | Low; demand comes from B2B and cross-border payouts | The story shifts from "trading chips" to "payment tool" | Relative winner |
 
-**Implication for the landscape:** as crypto's glory fades, the growth engine of issuers that rose on the crypto funnel weakens, while banks and payment firms that never relied on that funnel gain ground. The industry's centre of gravity moves from "who has the most trading pairs" to "whose credit is best and whose distribution is deepest".
+**Implication for the landscape:** as the crypto market cools, the growth engine of issuers that rose on the crypto funnel weakens, while banks and payment firms that never relied on that funnel gain ground. The industry's centre of gravity moves from "who has the most trading pairs" to "whose credit is best and whose distribution is deepest".
 
-### 10.4 The marketing pitch changes: without the halo, back to the clearing house
+### 10.4 The value proposition shifts toward payments
 
-In a crypto bull market, stablecoins sell "blockchain plus getting rich on crypto". Once the glory fades, what is left to sell is compliance, bank-grade credit and payment efficiency — exactly what licensed payment institutions and banks already sell. In other words, **without the halo, stablecoins will be judged as clearing houses or payment institutions, and will compete with banks on the banks' home ground.** That in turn supports this article's argument.
+In a crypto bull market, much stablecoin demand comes from trading. In a downturn, the lasting value proposition is compliance, credit quality and payment efficiency. In other words, **stablecoins will increasingly be judged as payment infrastructure, and will compete with banks and payment networks on credit and distribution.** That is a healthy shift for the industry, and it supports this article's framing.
 
 Telecom has a precedent: the telecom bubble burst around 2000. At its height Nortel accounted for more than a third of the total valuation of all companies on the Toronto Stock Exchange; it went bankrupt in 2009 ([Wikipedia](https://en.wikipedia.org/wiki/Nortel)). After the bubble, the survivors were the firms with real customers and cash flow.
 
@@ -179,13 +179,13 @@ Telecom has a precedent: the telecom bubble burst around 2000. At its height Nor
 
 ## 11. Conclusion
 
-A stablecoin issuer is, in essence, **a privately owned clearing house with no clearing-house licence, marketed through blockchain, fed by crypto's profit history, and paid by the spread on its pool of funds.** It gathers fiat through traditional payment networks, issues tokens as non-interest-bearing liabilities, completes "payments" on its own ledger, and pays out again through traditional networks.
+Economically, a stablecoin issuer is **a privately owned clearing house, licensed as an issuer, distributed through public blockchains, grown largely on crypto trading, and paid by the spread on its pool of funds.** It gathers fiat through traditional payment networks, issues tokens as non-interest-bearing liabilities, completes "payments" on its own ledger, and pays out again through traditional networks.
 
 Four implications follow:
 
 1. **Competition among stablecoins is a contest of deposit-gathering and distribution, not of technology.**
 2. **Their relationship with banks, Visa, Mastercard and SWIFT is not "disruption" but a fight over the float and fees in cross-border clearing.**
-3. **As crypto's glory fades, stablecoins are reduced to what they really are.** Once the funnel breaks, issuers that grew their pools on crypto trading slow down, and banks and payment firms gain ground (see Section 10).
+3. **A crypto downturn shifts the focus to payments.** Issuers whose pools grew on crypto trading may slow, while issuers built on payment use cases, along with banks and payment firms, gain ground (see Section 10).
 4. **The better the regulation, the more a stablecoin looks like a "narrow bank plus clearing house".** The question ultimately comes back to three points: who licenses these institutions, who supervises them, and who owns the interest. China, with NetsUnion and centralized reserve deposits, has given one answer.
 
 ## References

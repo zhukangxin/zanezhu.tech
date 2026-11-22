@@ -1,7 +1,7 @@
 ---
-title: "Cross-Border Payments Don't Need Blockchain: What Telecom Already Solved"
+title: "Cross-Border Payments Without a Shared Ledger: What Telecom Already Solved"
 date: 2026-11-14
-description: "Today's stablecoin and consortium settlement networks could all run on the telecom model: protocols agreed in advance, each party keeping its own ledger, and neutral clearing. A layer-by-layer case, a look at Partior, Tempo, Arc and Visa, and answers to ten objections."
+description: "An architecture comparison: today's institutional stablecoin and consortium settlement networks could also run on the telecom model: protocols agreed in advance, each party keeping its own ledger, and neutral clearing. A layer-by-layer case, a look at Partior, Tempo, Arc and Visa, and answers to ten objections."
 tags: ["Cross-border payments","Stablecoins","Blockchain","Telecom","Payments infrastructure"]
 publication: "LinkedIn"
 external_url: ""
@@ -13,7 +13,7 @@ draft: false
 
 I spent years building telecom platforms on telecommunication protocol standards, then nearly eight years on cross-border payments at Citi China. When I look at today's stablecoin payment networks, I keep seeing a problem telecom solved decades ago, without a shared ledger.
 
-My claim: today's stablecoin and consortium settlement networks, including Partior, Kinexys, mBridge, Tempo, Arc and multi-chain programs such as Visa's, could all work without a blockchain. Telecom has run a proven alternative for decades: protocols agreed in advance and executed by machines, each party keeping its own ledger, and a neutral clearinghouse or shared database where one is needed. That model is more mature, more efficient, and easier to fit to regulation.
+My claim is about architecture choice, not about whether these projects have merit. For institutional flows, today's stablecoin and consortium settlement networks, including Partior, Kinexys, mBridge, Tempo, Arc and multi-chain programs such as Visa's, could also be built without a shared blockchain ledger. Telecom has run a proven alternative for decades: protocols agreed in advance and executed by machines, each party keeping its own ledger, and a neutral clearinghouse or shared database where one is needed. For regulated institutional payments, that model is mature, efficient and easy to fit to regulation, so it deserves a place in every architecture review. Where blockchain does add something that model cannot, I say so at the end.
 
 One clarification. The alternative I mean is a distributed database, not a distributed file system. File systems such as HDFS, Ceph or IPFS don't support transactions or strongly consistent balance updates, so they can't serve as a ledger. They are fine for documents, message archives and audit snapshots.
 
@@ -95,7 +95,7 @@ But that is not the problem these networks set out to solve. They serve cross-bo
 
 ## Conclusion
 
-Institutional cross-border payments can be rebuilt on the telecom model: multilateral agreements at the business layer, automated protocols agreed in advance at the operations layer, mature distributed databases at the storage layer, and neutral operators for any data that must be shared. This architecture has decades of engineering behind it, and it beats blockchain on performance, privacy, data sovereignty and regulatory fit.
+Institutional cross-border payments can be rebuilt on the telecom model: multilateral agreements at the business layer, automated protocols agreed in advance at the operations layer, mature distributed databases at the storage layer, and neutral operators for any data that must be shared. This architecture has decades of engineering behind it, and for institutional flows it compares well with blockchain on performance, privacy, data sovereignty and regulatory fit. Blockchain remains the stronger choice where bearer self-custody or open, permissionless access is the goal.
 
 In today's stablecoin networks, the blockchain plays two roles: a carrier for the settlement asset, and a distribution channel. An issuer's ledger plus standard protocols can play both.
 
