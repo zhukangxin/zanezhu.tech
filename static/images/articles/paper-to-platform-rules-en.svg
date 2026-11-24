@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 376" role="img" aria-label="From code to configuration: who changes a rule" font-family="-apple-system,'Segoe UI','PingFang SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif" font-size="13">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9a958a"/></marker><marker id="arA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0f5b57"/></marker></defs>
+<rect width="760" height="376" rx="14" fill="#fffdf8"/>
+<text x="24" y="36" font-size="16" font-weight="600" fill="#1b1d22">From code to configuration: who changes a rule</text>
+<text x="24" y="58" font-size="12" fill="#5b5f68">The same regulatory change, before and after the rules platform</text>
+<text x="24" y="92" font-size="12.5" font-weight="600" fill="#5b5f68">Before: rules in code</text>
+<rect x="24" y="104" width="128" height="70" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<text x="88.0" y="135.0" font-size="12.5" font-weight="600" text-anchor="middle" fill="#1b1d22">Rule announced</text>
+<text x="88.0" y="152.0" font-size="11.5" text-anchor="middle" fill="#5b5f68">by the regulator</text>
+<path d="M154 139H168" fill="none" stroke="#9a958a" stroke-width="1.4" marker-end="url(#ar)"/>
+<rect x="170" y="104" width="128" height="70" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<text x="234.0" y="135.0" font-size="12.5" font-weight="600" text-anchor="middle" fill="#1b1d22">Requirements</text>
+<text x="234.0" y="152.0" font-size="11.5" text-anchor="middle" fill="#5b5f68">documents written</text>
+<path d="M300 139H314" fill="none" stroke="#9a958a" stroke-width="1.4" marker-end="url(#ar)"/>
+<rect x="316" y="104" width="128" height="70" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<text x="380.0" y="135.0" font-size="12.5" font-weight="600" text-anchor="middle" fill="#1b1d22">Budget contest</text>
+<text x="380.0" y="152.0" font-size="11.5" text-anchor="middle" fill="#5b5f68">win a dev slot</text>
+<path d="M446 139H460" fill="none" stroke="#9a958a" stroke-width="1.4" marker-end="url(#ar)"/>
+<rect x="462" y="104" width="128" height="70" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<text x="526.0" y="135.0" font-size="12.5" font-weight="600" text-anchor="middle" fill="#1b1d22">Vendor build</text>
+<text x="526.0" y="152.0" font-size="11.5" text-anchor="middle" fill="#5b5f68">code, test, release</text>
+<path d="M592 139H606" fill="none" stroke="#9a958a" stroke-width="1.4" marker-end="url(#ar)"/>
+<rect x="608" y="104" width="128" height="70" rx="8" fill="#f3f1ea" stroke="#9a958a" stroke-width="1.4"/>
+<text x="672.0" y="135.0" font-size="12.5" font-weight="600" text-anchor="middle" fill="#1b1d22">Live</text>
+<text x="672.0" y="152.0" font-size="11.5" text-anchor="middle" fill="#5b5f68">in years</text>
+<text x="24" y="202" font-size="12.5" font-weight="600" fill="#0f5b57">After: rules as configuration</text>
+<rect x="24" y="214" width="128" height="70" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<text x="88.0" y="245.0" font-size="12.5" font-weight="600" text-anchor="middle" fill="#1b1d22">Rule announced</text>
+<text x="88.0" y="262.0" font-size="11.5" text-anchor="middle" fill="#5b5f68">by the regulator</text>
+<path d="M154 249H168" fill="none" stroke="#0f5b57" stroke-width="1.4" marker-end="url(#arA)"/>
+<rect x="170" y="214" width="128" height="70" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<text x="234.0" y="245.0" font-size="12.5" font-weight="600" text-anchor="middle" fill="#1b1d22">Ops + compliance</text>
+<text x="234.0" y="262.0" font-size="11.5" text-anchor="middle" fill="#5b5f68">configure the rule</text>
+<path d="M300 249H314" fill="none" stroke="#0f5b57" stroke-width="1.4" marker-end="url(#arA)"/>
+<rect x="316" y="214" width="128" height="70" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<text x="380.0" y="245.0" font-size="12.5" font-weight="600" text-anchor="middle" fill="#1b1d22">Operations</text>
+<text x="380.0" y="262.0" font-size="11.5" text-anchor="middle" fill="#5b5f68">test before release</text>
+<path d="M446 249H460" fill="none" stroke="#0f5b57" stroke-width="1.4" marker-end="url(#arA)"/>
+<rect x="462" y="214" width="128" height="70" rx="8" fill="none" stroke="#9a958a" stroke-width="1.4"/>
+<text x="526.0" y="236.5" font-size="12.5" font-weight="600" text-anchor="middle" fill="#1b1d22">Three-way sign-off</text>
+<text x="526.0" y="253.5" font-size="11.5" text-anchor="middle" fill="#5b5f68">compliance, product</text>
+<text x="526.0" y="270.5" font-size="11.5" text-anchor="middle" fill="#5b5f68">and operations</text>
+<path d="M592 249H606" fill="none" stroke="#0f5b57" stroke-width="1.4" marker-end="url(#arA)"/>
+<rect x="608" y="214" width="128" height="70" rx="8" fill="#e2ece9" stroke="#0f5b57" stroke-width="2"/>
+<text x="672.0" y="245.0" font-size="12.5" font-weight="600" text-anchor="middle" fill="#0f5b57">Live</text>
+<text x="672.0" y="262.0" font-size="11.5" text-anchor="middle" fill="#5b5f68">in months</text>
+<text x="24" y="326" font-size="12" fill="#1b1d22">• Only confirmed rules are automated; ambiguous cases stay with a person.</text>
+<text x="24" y="350" font-size="12" fill="#1b1d22">• The people who understand a rule can change it themselves: technical DevOps becomes product DevOps.</text>
+</svg>
